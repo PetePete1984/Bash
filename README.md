@@ -2,7 +2,7 @@
 
 **⚠️ WARNING: THIS THEME STILL IN DEVELOPMENT. BUGS ARE COMMOM. IF YOU FIND ANY, PLEASE DM A user#0001⚠️**
 
-A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors!
+A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors! [How to install](https://0x71.cc/bd/guide/#installthemesplugins)
 
 Previews:
 
