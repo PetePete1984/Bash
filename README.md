@@ -9,3 +9,5 @@ A minimalist, fully-animated, clean and sexy theme. The best theme for square mo
 ![MacOS](https://cdn.discordapp.com/attachments/539180316447997974/652546319323496486/2.png)
 
 ![Linux (Running using KDE Plasma)](https://cdn.discordapp.com/attachments/539180316447997974/652546316941131788/3.png)
+
+![the best idea EVER lol](https://cdn.discordapp.com/attachments/539180316447997974/652551209076654080/unknown.png)
