@@ -1,0 +1,21 @@
+//META{"name":"Bash","description":"A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors!","author":"A user","version":"AutoUpadte Stable version"}*//{}
+
+@import url("https://a-user-s-discord-themes.github.io/Bash/app/main.css");
+
+:root{
+    /* BG Settings */
+    --background: url("https://lp.mentalidadeempreendedora.com.br/wp-content/uploads/2017/06/background-azul.png"); /*Your BG*/
+    --background-black-opacity: .5; /*Here you can set how dark you want for your background. No image editing*/
+    --background-opacity: .7; /*Opacity of your background. Set to 1 if you don't use transparency BD feature*/
+    --background-radius: 5px; /*Set the radius Discord. Set to 0 if you don't use transparency BD feature. Disabled for linux because it's ugly this enabled in discord with frame*/
+    
+    /*Color Settings*/
+    --main-color: darkcyan; /*For some colors*/
+    --ping-color: var(--main-color); /*Pings Color. Default is the --main-color value. Original value is #f04747*/
+    --text-normal: #dcddde; /*Text Color. You can change it to black if you use a white background. Default/Original is #dcddde*/
+    --text-link: var(--main-color); /*Links Color. Default is the --main-color value. Original value is #00b0f4*/
+
+    /*Other Settings*/
+    --icon-image: url("https://cdn.discordapp.com/attachments/539180316447997974/651605523656867891/output.png");
+    --main-border-radius: 30px; /*Border Radius for buttons, channels, etc. I recomend to NOT put 50%*/
+}
