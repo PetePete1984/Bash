@@ -10,12 +10,12 @@
     --background-radius: 5px; /*Set the radius Discord. Set to 0 if you don't use transparency BD feature. Disabled for linux because it's ugly this enabled in discord with frame*/
     
     /*Color Settings*/
-    --main-color: darkcyan; /*For some colors*/
+    --main-color: darkcyan; /*Replace the discord color*/
     --ping-color: var(--main-color); /*Pings Color. Default is the --main-color value. Original value is #f04747*/
     --text-normal: #dcddde; /*Text Color. You can change it to black if you use a white background. Default/Original is #dcddde*/
     --text-link: var(--main-color); /*Links Color. Default is the --main-color value. Original value is #00b0f4*/
 
     /*Other Settings*/
     --icon-image: url("https://cdn.discordapp.com/attachments/539180316447997974/651605523656867891/output.png");
-    --main-border-radius: 30px; /*Border Radius for buttons, channels, etc. I recomend to NOT put 50%*/
+    --main-border-radius: 30px; /*Border Radious for buttons, channels, etc. I recomend to NOT put 50%*/
 }
