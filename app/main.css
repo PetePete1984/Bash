@@ -25,7 +25,7 @@
 
 .sidebar-2K8pFh{
     transition: all 300ms;
-    margin-left: -12.1em;
+    margin-left: -11.6em;
 }
 
 .wrapper-1Rf91z:hover + .base-3dtUhz .sidebar-2K8pFh, .sidebar-2K8pFh:hover{
@@ -49,7 +49,6 @@
 .layer-3QrUeG[aria-label="USER_SETTINGS"]{
     background: #0004;
 }
-
 
 .standardSidebarView-3F1I7i{
     padding: 3em;
@@ -107,32 +106,7 @@
     opacity: var(--background-black-opacity);
 }
 
-.appMount-3lHmkl, body {
-    background-color: transparent;
-}
-.app-2rEoOp {
-    background-color: transparent;
-}
-.bg-h5JY_x {
-    background-color: transparent;
-}
-
-.scroller-2TZvBN, .wrapper-1Rf91z, .panels-j1Uci_{
-    background: transparent;
-}
-
-.container-1r6BKw.themed-ANHk51 {
-    background: transparent;
-}
-.messages-3amgkR {
-    background-color: transparent;
-}
-
-.chat-3bRxxu {
-    background: transparent;
-}
-
-.sidebar-2K8pFh, .container-PNkimc, .privateChannels-1nO12o, .scroller-1JbKMe{
+.appMount-3lHmkl, body, .app-2rEoOp, .bg-h5JY_x, .scroller-2TZvBN, .wrapper-1Rf91z, .panels-j1Uci_, .container-1r6BKw.themed-ANHk51, .messages-3amgkR, .chat-3bRxxu, .sidebar-2K8pFh, .container-PNkimc, .privateChannels-1nO12o, .scroller-1JbKMe, .uploadArea-3QgLtW{
     background: transparent;
 }
 
@@ -187,7 +161,7 @@
 }
 
 .listItem-2P_4kh + #bd-pub-li{
-    margin-top: -2.5em;
+    margin-top: -2em;
     opacity: 0;
     z-index: -20;
     transition: all 200ms;
@@ -385,8 +359,7 @@
 .markup-2BOw-j code.diff::before, .markup-2BOw-j code.DIFF::before{ content: "Diff\a"; background: #00ffb3; color: #fff; } /*Diff*/
 .markup-2BOw-j code[class*="php"]::before{ content: "PHP\a"; background: #474A8A; color: #000d; } /*Diff*/
 
-.markup-2BOw-j code[class="scrollbarGhostHairline-1mSOM1 scrollbar-3dvm_9 da-scrollbarGhostHairline da-scrollbar hljs"]::before{display: none;}
-
+.markup-2BOw-j code[class="scrollbarGhostHairline-1mSOM1 scrollbar-3dvm_9 hljs da-scrollbarGhostHairline da-scrollbar"]::before, .markup-2BOw-j code[class="scrollbarGhostHairline-1mSOM1 scrollbar-3dvm_9 da-scrollbarGhostHairline da-scrollbar hljs"]::before{display: none;}
 /*Exie Code Setup*/
 
 :root{
@@ -556,6 +529,19 @@
 
 .inner-zqa7da {
     background-color: transparent;
+}
+
+.bda-slist li[data-name="Bash"] .bda-version{
+    visibility: hidden;
+    word-spacing:-999px;
+    letter-spacing: -999px; 
+}
+
+.bda-slist li[data-name="Bash"] .bda-version:after{
+    content: "0.2";
+    visibility: visible;
+    word-spacing:normal;
+    letter-spacing:normal; 
 }
 
 .theme-dark .bda-slist li[data-name="Bash"]::before{
@@ -963,7 +949,7 @@
     -o-transform: rotate(-90deg);
 }
 
-.app-2rEoOp::before {
+body::after {
     font-family: 'Blox (BRK)';
     content: "BaSh";
     color: #fff;
@@ -971,7 +957,6 @@
     position: fixed;
     bottom: 8px;
     right: 8px;
-    z-index: 7343;
     opacity: .6;
 }
 
@@ -1159,17 +1144,6 @@
     -o-border-radius: 0;
 }
 
-/*.inner-zqa7da::after{
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-}
-
-.inner-zqa7da::after ~ .buttons-205you{
-    display: none;
-}*/
-
 .headerFill-adLl4x{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1306,7 +1280,7 @@
     -ms-border-radius: 0;
     -o-border-radius: 0;
 }
-
+/*
 .channelTextArea-rNsIhG .buttons-205you{
     position: absolute;
     left: 50%;
@@ -1315,23 +1289,15 @@
     -moz-transform: translateX(-50%) translateY(-25px);
     -ms-transform: translateX(-50%) translateY(-25px);
     -o-transform: translateX(-50%) translateY(-25px);
-    z-index: 20s;
+    z-index: 20;
 }
 
 .channelTextArea-rNsIhG .button-2vd_v_:hover{
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
+    padding-top: 32px;
 }
-
-.channelTextArea-rNsIhG .button-2vd_v_{
-    transition: all 200ms;
-    -webkit-transition: all 200ms;
-    -moz-transition: all 200ms;
-    -ms-transition: all 200ms;
-    -o-transition: all 200ms;
+*/
+.channelTextArea-rNsIhG .buttons-205you{
+    margin-left: 5px;
 }
 
 .textArea-2Spzkt{
@@ -1387,7 +1353,8 @@
 }
 
 .container-3baos1{
-    padding-left: 20px;
+    padding: 20px;
+    padding-bottom: 0;
 }
 
 .addButton-pcyyf6 {
@@ -1406,10 +1373,165 @@
     background: var(--ping-color) !important;
 }
 
+.button-38aScr{
+    border-radius: var(--main-border-radius);
+    -webkit-border-radius: var(--main-border-radius);
+    -moz-border-radius: var(--main-border-radius);
+    -ms-border-radius: var(--main-border-radius);
+    -o-border-radius: var(--main-border-radius);
+}
+
+.theme-dark .ctaBar-2UsjF2 {
+    background-color: #2f313644;
+}
+
+.theme-dark .perk-2WeBWW {
+    background-color: #2f313644;
+}
+
+.disabled-fu08eR {
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.iconBadge-qZ4Ksk{
+    background: var(--main-color);
+}
+
+.connection-1fbD7X[style="border-color: rgb(95, 153, 207); background-color: rgb(95, 153, 207);"]{
+    background-color: #FF4500 !important;
+}
+
+.divider-3gKybi{
+    background-color: transparent;
+    color: #fff;
+    text-transform: unset;
+}
+
+.dividerRed-MKoLlr .dividerContent-2L12VI:after, .dividerRed-MKoLlr .dividerContent-2L12VI:before, .dividerContent-2L12VI:after, .dividerContent-2L12VI:before{
+    display: none;
+}
+
+.divider-3gKybi .dividerContent-2L12VI{
+    box-shadow: 0 0 60px 4px #000;
+    display:table;
+    margin:0 auto;
+    background: var(--main-color);
+    padding: 2px 1em;
+    border-radius: var(--main-border-radius);
+    -webkit-border-radius: var(--main-border-radius);
+    -moz-border-radius: var(--main-border-radius);
+    -ms-border-radius: var(--main-border-radius);
+    -o-border-radius: var(--main-border-radius);
+}
+
+.dividerRed-MKoLlr .dividerContent-2L12VI{
+    background: #f04747;
+}
+
+#pluginNotice{
+    top: -25px;
+    border-radius: 0 0 10px 10px !important;
+    -webkit-border-radius: 0 0 10px 10px !important;
+    -moz-border-radius: 0 0 10px 10px !important;
+    -ms-border-radius: 0 0 10px 10px !important;
+    -o-border-radius: 0 0 10px 10px !important;
+    transition: top 200ms !important;
+    -webkit-transition: top 200ms !important;
+    -moz-transition: top 200ms !important;
+    -ms-transition: top 200ms !important;
+    -o-transition: top 200ms !important;
+}
+
+#pluginNotice:hover{
+    top: 0;
+}
+
+.checkbox-1ix_J3, .checkbox-3kaeSU .checkboxInner-3yjcPe span{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.item-26Dhrx[style*="border-color: rgb(114, 137, 218);"]{
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+[name="Checkmark"] g polyline[stroke="#7289da"]{
+    stroke: var(--main-color);
+}
+
+.item-26Dhrx[style*="border-color: rgb(114, 137, 218);"] .checked-3_4uQ9{
+    border-color: var(--main-color) !important;
+}
+
+.theme-dark .pageWrapper-1PgVDX {
+    background-color: transparent;
+}
+
+.checkbox-3kaeSU .checkboxInner-3yjcPe .checkboxElement-1qV33p:checked+span {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ, .top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active{
+    border-bottom-color: var(--main-color);
+}
+
+.header-2tA9Os{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+body{
+    --channeltextarea-background: transparent;
+}
+
+.content-yTz4x3:before{
+    display: none;
+}
+
+.header-2o-2hj{
+    box-shadow: none;
+}
+
+.newMessagesBar-mujexs{
+    margin-top: 6px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+html:not([lang])::before{
+    font-family: Arial, Helvetica, sans-serif;
+    content: "This is a preview - Download it if you liked";
+    font-size: 30px;
+    position: fixed;
+    background: #0004;
+    bottom: 0;
+    left: 2.4em;
+    padding: 5px;
+    color: #fff;
+}
+
+.creationDate{
+    grid-column: span 2;
+}
+
+.markup-2BOw-j code{
+    background: rgba(0, 0, 0, .01);
+}
 
 
 
 /*Anims*/
+
+@keyframes fadeAnim{ from {opacity: 0;} to {opacity: 1;} }
 
 @keyframes gyroAnim{
     from{
