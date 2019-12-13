@@ -1,4 +1,6 @@
-@import url('https://uppercaseuser.github.io/LTD/app.css');
+@import url("https://a-user-s-discord-themes.github.io/Bash/external%20plugins/codeblockLangIdentifier.css"); /*Import all langs - Thx for intrnl*/
+@import url("https://a-user-s-discord-themes.github.io/Bash/external%20plugins/update.css"); /*This will enable when a update on settings is made*/
+@import url('https://uppercaseuser.github.io/LTD/app.css'); /*Light Theme blocker*/
 
 /*Fonts*/
 @font-face {font-family: "Blox (BRK)"; src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot"); src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff") format("woff"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.svg#Blox (BRK)") format("svg"); } /*Blox BRK*/
@@ -285,6 +287,7 @@
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+    z-index: 10000;
 }
 
 .platform-win .notice-2FJMB4, .platform-win .bd-toast{
@@ -300,14 +303,12 @@
 }
 
 /*Code setup*/
-.markup-2BOw-j code:not(.inline):before{
+#app-mount .markup-2BOw-j .hljs:before{
     display: block;
-    content: "Unkown Language";
-    background: #888;
+    background: #0004;
     color: #fff;
     padding: 4px;
     margin-bottom: 8px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -316,51 +317,21 @@
     -o-border-radius: 3px;
 }
 
-.markup-2BOw-j code.inline{
+.markup-2BOw-j code{
     background: #0004;
 }
 
 .markup-2BOw-j pre{
     padding: 0px;
-    background: #000a !important;
+    background: transparent !important;
 }
 
-.markup-2BOw-j code.css::before, .markup-2BOw-j code.CSS::before{ content: "Cascade Style Sheets\a"; background: #4B8BBE; color: #fff; } /*CSS*/
-.markup-2BOw-j code.scss::before, .markup-2BOw-j code.SCSS::before{ content: "SCSS\a"; background: #be1c10; color: #fff; } /*SCSS*/
-.markup-2BOw-j code.js::before, .markup-2BOw-j code.JS::before{ content: "JavaScript\a"; background: #f0db4f; color: #323330; } /*JS*/
-.markup-2BOw-j code.json::before, .markup-2BOw-j code.JSON::before{ content: "JavaScript Object Notation\a"; background: #92852e; color: #323330; } /*JS*/
-.markup-2BOw-j code.coffee::before, .markup-2BOw-j code.COFFEE::before{ content: "CoffeeScript\a"; background: #3e2723; color: #fff; } /*JS*/
-.markup-2BOw-j code.ts::before, .markup-2BOw-j code.TS::before{ content: "TypeScript\a"; background: #017ACD; color: #fff; } /*TypeScript*/
-.markup-2BOw-j code.html::before, .markup-2BOw-j code.HTML::before, .markup-2BOw-j code.htm::before, .markup-2BOw-j code.HTM::before{ content: "HTML\a"; background: #b16700; color: #fff; } /*HTML*/
-.markup-2BOw-j code.java::before, .markup-2BOw-j code.JAVA::before{ content: "Java\a"; background: #ED8B00; color: #fff; } /*Java*/
-.markup-2BOw-j code.cs::before, .markup-2BOw-j code.CS::before{ content: "C#\a"; background: #0a950a; color: #fff; } /*C#*/
-.markup-2BOw-j code.fs::before, .markup-2BOw-j code.FS::before{ content: "F#\a"; background: #890da8; color: #fff; } /*F#*/
-.markup-2BOw-j code.c::before, .markup-2BOw-j code.C::before{ content: "C\a"; background: #3d4043; color: #fff; } /*C*/
-.markup-2BOw-j code.cpp::before, .markup-2BOw-j code.CPP::before{ content: "C++\a"; background: #0077ff; color: #fff; } /*C++*/
-.markup-2BOw-j code.h::before, .markup-2BOw-j code.H::before{ content: "C / C++ / Objective-C Source Code\a"; background: #5B6CBD; color: #fff; } /*C, C++, or Objective-C Source Code.*/
-.markup-2BOw-j code.m::before, .markup-2BOw-j code.M::before{ content: "Objective-C Implementation File\a"; background: #0041a4; color: #fff; } /*Objective-C Implementation File*/
-.markup-2BOw-j code.py::before, .markup-2BOw-j code.PY::before{ content: "Python\a"; background: #950a33; color: #fff; } /*Python*/
-.markup-2BOw-j code.f90::before, .markup-2BOw-j code.F90::before{ content: "Fortran 90\a"; background: #c72b2b; color: #fff; } /*Fortran 90*/
-.markup-2BOw-j code.f95::before, .markup-2BOw-j code.F95::before{ content: "Fortran 95\a"; background: #ff3838; color: #fff; } /*Fortran 95*/
-.markup-2BOw-j code.pas::before, .markup-2BOw-j code.PAS::before{ content: "Pascal\a"; background: #a6be38; color: #fff; } /*Pascal*/
-.markup-2BOw-j code.ini::before, .markup-2BOw-j code.INI::before{ content: "Windows Initialization File\a"; background: #000; color: #FFF; } /*INI*/
-.markup-2BOw-j code.xml::before, .markup-2BOw-j code.XML::before{ content: "XML\a"; background: #7cb100; color: #fff; } /*XML*/
-.markup-2BOw-j code.yml::before, .markup-2BOw-j code.YML::before{ content: "YML\a"; background: #0026ff; color: #fff; } /*YML*/
-.markup-2BOw-j code.yaml::before, .markup-2BOw-j code.YAML::before{ content: "YAML\a"; background: #0084ff; color: #fff; } /*YML*/
-.markup-2BOw-j code.matlab::before, .markup-2BOw-j code.MATLAB::before{ content: "MATLAB\a"; background: #ff9500; color: #fff; } /*YML*/
-.markup-2BOw-j code.vb::before, .markup-2BOw-j code.VB::before{ content: "Visual Basic\a"; background: #6c0086; color: #fff; } /*VB*/
-.markup-2BOw-j code.go::before, .markup-2BOw-j code.GO::before{ content: "Go\a"; background: #6DD1E3; color: #fff; } /*Go*/
-.markup-2BOw-j code.lua::before, .markup-2BOw-j code.LUA::before{ content: "Lua\a"; background: #00f; color: #fff; } /*Lua*/
-.markup-2BOw-j code.ruby::before, .markup-2BOw-j code.RUBY::before{ content: "Ruby\a"; background: #EA5745; color: #fff; } /*Ruby*/
-.markup-2BOw-j code.sh::before, .markup-2BOw-j code.SH::before{ content: "Bash\a"; background: #aaa; color: #fff; } /*Bash*/
-.markup-2BOw-j code.bat::before, .markup-2BOw-j code.BAT::before{ content: "Batch\a"; background: #666; color: #fff; } /*Batch*/
-.markup-2BOw-j code.bf::before, .markup-2BOw-j code.BF::before{ content: "Brainfuck\a"; background: #E78A85; color: #fff; } /*Brainfuck*/
-.markup-2BOw-j code.md::before, .markup-2BOw-j code.MD::before, .markup-2BOw-j code.markdown::before, .markup-2BOw-j code.Markdown::before, .markup-2BOw-j code.MARKDOWN::before{ content: "Markdown\a"; background: #FFF; color: #000; } /*Markdown*/
-.markup-2BOw-j code.diff::before, .markup-2BOw-j code.DIFF::before{ content: "Diff\a"; background: #00ffb3; color: #fff; } /*Diff*/
-.markup-2BOw-j code[class*="php"]::before{ content: "PHP\a"; background: #474A8A; color: #000d; } /*Diff*/
+#app-mount .markup-2BOw-j code[style~="hljs" i]::before{
+    display: none;
+}
 
-.markup-2BOw-j code[class="scrollbarGhostHairline-1mSOM1 scrollbar-3dvm_9 hljs da-scrollbarGhostHairline da-scrollbar"]::before, .markup-2BOw-j code[class="scrollbarGhostHairline-1mSOM1 scrollbar-3dvm_9 da-scrollbarGhostHairline da-scrollbar hljs"]::before{display: none;}
-/*Exie Code Setup*/
+
+/*Exit Code Setup*/
 
 :root{
     --disabler-text: 'Please disable light theme.\a Bash does not support light theme';
@@ -370,12 +341,6 @@
     --alert-color: #faa61a;
     --alert-message: "\aNot supported for Bash";
 }
-
-.imageWrapper-2p5ogY + a::before{
-    font-family: 'Segoe MDL2 Assets';
-}
-
-.imageWrapper-2p5ogY + a:nth-child(1)::before  { content: '\e8e5'; } 
 
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch, #bd-settingspane-container .ui-switch-item .ui-switch-wrapper, .switch-3wwwcV input, .switch-3wwwcV{
     height: 20px;
@@ -473,6 +438,7 @@
 
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb{
     border: none;
+    background: var(--main-color);
 }
 
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar{
@@ -538,7 +504,7 @@
 }
 
 .bda-slist li[data-name="Bash"] .bda-version:after{
-    content: "0.2";
+    content: "0.3";
     visibility: visible;
     word-spacing:normal;
     letter-spacing:normal; 
@@ -658,14 +624,14 @@
     opacity: 0 !important;
 }
 
-.layer-v9HyYc:nth-child(1)[style*="right"]:not([style*="bottom: 280px;"]):not([style*="button"]){
+.layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB)[style*="right"]:not([style*="bottom: 280px;"]):not([style*="button"]){
     right: 0 !important;
     top: 0 !important;
     bottom: 0 !important;
     height: 100%;
 }
 
-.layerContainer-yqaFcK .layer-v9HyYc:nth-child(1)[style*="right"]:not([style*="button"]) .translate-2dAEQ6.didRender-33z1u8{
+.layerContainer-yqaFcK .layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB)[style*="right"]:not([style*="button"]) .translate-2dAEQ6.didRender-33z1u8{
     transition: none;
     -webkit-transition: none;
     -moz-transition: none;
@@ -676,7 +642,7 @@
     -webkit-animation: popout .25s;
 }
 
-.layerContainer-yqaFcK .layer-v9HyYc:nth-child(1)[style*="right"]:not([style*="button"]) [tabindex="0"][role="button"]{
+.layerContainer-yqaFcK .layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB)[style*="right"]:not([style*="button"]) [tabindex="0"][role="button"]{
     transition: none !important;
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -694,7 +660,7 @@
     -o-transform: translateY(-100%);
 }
 
-.layer-v9HyYc:nth-child(1)[style*="right"]:not([style*="bottom: 280px;"]):not([style*="button"]){
+.layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB)[style*="right"]:not([style*="bottom: 280px;"]):not([style*="button"]){
     animation: popout .25s;
     -webkit-animation: popout .25s;
 }
@@ -709,14 +675,15 @@
     -o-border-radius: 0;
 }
 
-.layer-v9HyYc:nth-child(1):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .scroller-3vODG7{
+.layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .scroller-3vODG7{
     height: -webkit-fill-available;
+    max-height: -webkit-fill-available;
     width: -webkit-fill-available;
 }
 
 .userPopout-3XzG_A{
     height: 100%;
-    max-height: none;
+    max-height: 100%;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -746,33 +713,33 @@
     display: none;
 }
 
-.layer-v9HyYc:nth-child(1):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .header-1nkwgG{
+.layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .header-1nkwgG{
     padding-top: 40px;
     z-index: 0;
 }
 
-.platform-win .layer-v9HyYc:nth-child(1):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .header-1nkwgG{
+.platform-win .layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .header-1nkwgG{
     padding-top: 85px;
 }
 
-.platform-win .layer-v9HyYc:nth-child(1):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .categories-1feg4n{
+.platform-win .layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .categories-1feg4n{
     padding-top: 40px;
 }
 
-.platform-win .layerContainer-yqaFcK .layer-v9HyYc:nth-child(1):not([style*="bottom: 280px;"]) #bda-qem + div .emojiPicker-3m1S-j .categories-1feg4n{
+.platform-win .layerContainer-yqaFcK .layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB):not([style*="bottom: 280px;"]) #bda-qem + div .emojiPicker-3m1S-j .categories-1feg4n{
     padding-top: 0;
 }
 
-.platform-win .layerContainer-yqaFcK .layer-v9HyYc:nth-child(1):not([style*="bottom: 280px;"]) #bda-qem + div .emojiPicker-3m1S-j .header-1nkwgG{
+.platform-win .layerContainer-yqaFcK .layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB):not([style*="bottom: 280px;"]) #bda-qem + div .emojiPicker-3m1S-j .header-1nkwgG{
     padding-top: 40px;
 }
 
-.layer-v9HyYc:nth-child(1):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .categories-1feg4n{
+.layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .categories-1feg4n{
     position: fixed;
     z-index: 1;
 }
 
-.platform-win .layerContainer-yqaFcK .layer-v9HyYc:nth-child(1):not([style*="bottom: 280px;"]) #bda-qem{
+.platform-win .layerContainer-yqaFcK .layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB):not([style*="bottom: 280px;"]) #bda-qem{
     padding-top: 42px;
 }
 
@@ -882,7 +849,7 @@
     -o-border-radius: 0;
 }
 
-.platform-win .layer-v9HyYc:nth-child(1)[style*="right"]:not([style*="bottom: 280px;"]):not([style*="button"]) .contextMenu-HLZMGh{
+.platform-win .layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB)[style*="right"]:not([style*="bottom: 280px;"]):not([style*="button"]) .contextMenu-HLZMGh{
     padding-top: 50px;
 }
 
@@ -968,7 +935,7 @@ body::after {
     display: none;
 }
 
-.layer-v9HyYc:nth-child(1):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .scroller-3vODG7, .emote-menu-inner{
+.layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB):not([style*="bottom: 280px;"]) .emojiPicker-3m1S-j .scroller-3vODG7, .emote-menu-inner{
     padding-bottom: 60px;
 }
 
@@ -1083,11 +1050,12 @@ body::after {
 }
 
 .jumpToPresentBar-9P20AM .barButtonBase-3UKlW2 svg{
-    transform: translateY(1002px) translateX(-223px);
-    -webkit-transform: translateY(1002px) translateX(-223px);
-    -moz-transform: translateY(1002px) translateX(-223px);
-    -ms-transform: translateY(1002px) translateX(-223px);
-    -o-transform: translateY(1002px) translateX(-223px);
+    transform: translateY(1005px) translateX(-14px);
+    -webkit-transform: translateY(1005px) translateX(-14px);
+    -moz-transform: translateY(1005px) translateX(-14px);
+    -ms-transform: translateY(1005px) translateX(-14px);
+    -o-transform: translateY(1005px) translateX(-14px);
+    position: absolute;
 }
 
 #pubslayer .ui-tab-bar-item.selected {
@@ -1124,7 +1092,7 @@ body::after {
     flex: none !important;
 }
 
-.layer-v9HyYc:nth-child(1)[style*="right"] .scale-3iLZhb.animatorTop-2Y7x2r{
+.layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB)[style*="right"] .scale-3iLZhb.animatorTop-2Y7x2r{
     height: -webkit-fill-available;
     animation: popout .25s;
     -webkit-animation: popout .25s;
@@ -1301,7 +1269,7 @@ body::after {
 }
 
 .textArea-2Spzkt{
-    background: #40444b60;
+    background: var(--text-send-message-background);
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -1395,7 +1363,7 @@ body::after {
 }
 
 .iconBadge-qZ4Ksk{
-    background: var(--main-color);
+    background: var(--ping-color);
 }
 
 .connection-1fbD7X[style="border-color: rgb(95, 153, 207); background-color: rgb(95, 153, 207);"]{
@@ -1431,6 +1399,7 @@ body::after {
 
 #pluginNotice{
     top: -25px;
+    -webkit-app-region:drag;
     border-radius: 0 0 10px 10px !important;
     -webkit-border-radius: 0 0 10px 10px !important;
     -moz-border-radius: 0 0 10px 10px !important;
@@ -1500,6 +1469,7 @@ body{
 .newMessagesBar-mujexs{
     margin-top: 6px;
     box-shadow: 0 0 10px #000;
+    background: var(--main-color);
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -1508,7 +1478,7 @@ body{
 }
 
 html:not([lang])::before{
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
     content: "This is a preview - Download it if you liked";
     font-size: 20px;
     position: fixed;
@@ -1523,15 +1493,142 @@ html:not([lang])::before{
     grid-column: span 2;
 }
 
-.markup-2BOw-j code{
-    background: rgba(0, 0, 0, .01);
+.container-2ax-kl{
+    opacity: .6;
+    color: var(--main-color) !important;
+    transition: all 100ms;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    -ms-transition: all 100ms;
+    -o-transition: all 100ms;
 }
+
+.container-2ax-kl:hover{
+    opacity: 1;
+}
+
+.item-2hkk8m, .unread-3zKkbm{
+    background: var(--message-indicator-color);
+}
+
+.unread-3zKkbm + .content-3at_AU .name-3_Dsmg{
+    color: var(--message-indicator-color) !important;
+}
+
+.blockquoteContainer-U5TVEi{
+    background: #0004;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6 {
+    margin: 0;
+    background: var(--main-color);
+    width: 4px;
+    border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+}
+
+.animatedContainer-1pJv5C, .bannerImage-1jOskm {
+    height: 48px;
+    transition: height 200ms;
+    -webkit-transition: height 200ms;
+    -moz-transition: height 200ms;
+    -ms-transition: height 200ms;
+    -o-transition: height 200ms;
+}
+
+.container-PNkimc .scroller-2FKFPG div[style="width: 100%; height: 84px; visibility: hidden;"]{
+    height: 0px !important;
+    transition: height 200ms;
+    -webkit-transition: height 200ms;
+    -moz-transition: height 200ms;
+    -ms-transition: height 200ms;
+    -o-transition: height 200ms;
+}
+
+.container-2Rl01u:hover + .positionedContainer-l-ZqRq + .scrollerWrap-2lJEkd .scroller-2FKFPG div[style="width: 100%; height: 84px; visibility: hidden;"]{
+    height: 84px !important;
+}
+
+.container-2Rl01u:hover .animatedContainer-1pJv5C, .container-2Rl01u:hover .bannerImage-1jOskm {
+    height: 135px;
+}
+
+.textArea-2Spzkt .blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6, .textArea-2Spzkt .blockquoteContainer-U5TVEi{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.attachment-33OFj0 .icon-1kp3fr{
+    display: none;
+}
+
+.theme-dark .attachment-33OFj0{
+    border: none;
+}
+
+.form-2fGMdU {
+    border-top: none;
+}
+
+.containerCozy-jafyvG{
+    animation: fadeAnim .5s;
+    -webkit-animation: fadeAnim .5s;
+}
+
+.mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before, .mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN{
+    background-color: var(--main-color);
+}
+
+.noticeStreamerMode-2TSQpg{
+    padding-left: 8px;
+}
+
+*{
+    caret-color: currentColor;
+}
+
+body{
+    counter-reset: lines;
+}
+
+.markup-2BOw-j code::first-line::before{
+    counter-increment: lines;
+    content: counter(lines);
+}
+
+.dividerEnabled-2TTlcf{
+    display: none;
+}
+
+::placeholder, body, button, input, select, textarea, div, :root{
+    font-family: var(--font);
+}
+
+.wrapper-35wsBm{
+    background: #2f313655;
+}
+
+.header-2tA9Os + .content-1EtbQh{
+    padding-top: 12px;
+}
+
 
 
 
 /*Anims*/
 
-@keyframes fadeAnim{ from {opacity: 0;} to {opacity: 1;} }
+@keyframes fadeAnim{ from { opacity: 0; } to { opacity: 1; } }
 
 @keyframes gyroAnim{
     from{
