@@ -4,12 +4,14 @@
 
 A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors! [How to install](https://0x71.cc/bd/guide/#installthemesplugins)
 
+Settings (like changing bg, color, transparency, etc...) there's in the file
+
 Previews:
 
-![Windows](https://cdn.discordapp.com/attachments/539180316447997974/652546314659430442/1.png)
+![Windows](https://cdn.discordapp.com/attachments/539180316447997974/655212765551656961/unknown.png)
 
-![MacOS](https://cdn.discordapp.com/attachments/539180316447997974/652546319323496486/2.png)
+![MacOS](https://cdn.discordapp.com/attachments/539180316447997974/655213250417524760/unknown.png)
 
-![Linux (Running using KDE Plasma)](https://cdn.discordapp.com/attachments/539180316447997974/652546316941131788/3.png)
+![Linux](https://cdn.discordapp.com/attachments/539180316447997974/655213568593231873/unknown.png)
 
-![the best idea EVER lol](https://cdn.discordapp.com/attachments/539180316447997974/652551209076654080/unknown.png)
+![Linux (Settings opened)](https://cdn.discordapp.com/attachments/539180316447997974/655213943249436673/unknown.png)
