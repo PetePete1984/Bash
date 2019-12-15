@@ -1,5 +1,7 @@
+/*USERS*/
+
 /*A user*/
-.header-QKLPzZ [user_by_bdfdb="264062457448759296"]::before{
+.header-QKLPzZ .avatar-3EQepX[user_by_bdfdb="264062457448759296"]::before, .header-QKLPzZ .avatar-3EQepX[aria-label*="A user"]::before{
     background: url("https://3t3.me/picture/material_wallpaper_1/2880x5120.png?lu=1568721297");
     background-size: cover;
     background-position: center;
