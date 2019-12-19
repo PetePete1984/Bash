@@ -3,6 +3,27 @@
 @import url("https://a-user-s-discord-themes.github.io/Bash/external%20plugins/update.css"); /*This will enable when a update on settings is made*/
 @import url('https://uppercaseuser.github.io/LTD/app.css'); /*Light Theme blocker*/
 
+:root{
+    /* BG Settings */
+    --background: url("https://i2.wp.com/www.123freevectors.com/wp-content/original/132463-cool-blue-geometric-shapes-background.jpg?w=800&q=95"); /*Your BG*/
+    --background-black-opacity: .5; /*Here you can set how dark you want for your background. No image editing*/
+    --background-opacity: 1; /*Opacity of your background. Set to 1 if you don't use transparency BD feature*/
+    --background-radius: 5px; /*Set the radius Discord. Set to 0 if you don't use transparency BD feature. Disabled for linux because it's ugly this enabled in discord with frame*/
+    
+    /*Color Settings*/
+    --main-color: #2956c9; /*Replace the discord color*/
+    --ping-color: var(--main-color); /*Pings Color. Original value is #f04747*/
+    --text-normal: #dcddde; /*Text Color. You can change it to black if you use a white background. Original is #dcddde*/
+    --text-link: var(--main-color); /*Links Color. Original value is #00b0f4*/
+    --message-indicator-color: #fff; /*Message Color. Original value is #fff*/
+
+    /*Other Settings*/
+    --text-send-message-background: transparent; /*Sets the bg of the text area. Default is #40444b60*/
+    --icon-image: url("https://cdn.discordapp.com/attachments/539180316447997974/651605523656867891/output.png");
+    --main-border-radius: 30px; /*Border Radious for buttons, channels, etc. I recomend to NOT put 50%*/
+    --font: "Product Sans"; /*Font of Discord. Original is: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif*/
+}
+
 /*Fonts*/
 @font-face {font-family: "Blox (BRK)"; src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot"); src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff") format("woff"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.svg#Blox (BRK)") format("svg"); } /*Blox BRK*/
 
@@ -377,8 +398,13 @@
     -o-border-radius: 3px;
 }
 
-.markup-2BOw-j code{
+.markup-2BOw-j .hljs{
     background: #0004;
+    backdrop-filter: blur(5px);
+}
+
+.markup-2BOw-j .hljs:not([class$=hljs]){
+    padding-top: 5px !important;
 }
 
 .markup-2BOw-j pre{
@@ -386,8 +412,16 @@
     background: transparent !important;
 }
 
-#app-mount .markup-2BOw-j code[style~="hljs" i]::before{
+#app-mount .markup-2BOw-j code[style$="hljs" i]::before{
     display: none;
+}
+
+.powercord-codeblock-lang:not(:empty){
+    display: none;
+}
+
+.hljs:not([class$=hljs]) .powercord-lines:after {
+    margin-top: 13px;
 }
 
 
@@ -559,7 +593,7 @@
 }
 
 .bda-slist li[data-name="Bash"] .bda-version:after{
-    content: "0.4";
+    content: "0.4.1";
     visibility: visible;
     word-spacing:normal;
     letter-spacing:normal; 
@@ -653,6 +687,12 @@
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     -o-transform: translateY(-30px);
+    max-height: 30em;
+    overflow-y: auto;
+}
+
+.autocomplete-1vrmpx::-webkit-scrollbar{
+    width: 0;
 }
 
 .contentTitle-2tG_sM{
@@ -988,6 +1028,7 @@ body::after {
     position: fixed;
     bottom: 8px;
     right: 8px;
+    z-index: 1;
     opacity: .6;
 }
 
@@ -1188,6 +1229,17 @@ body::after {
     z-index: 4;
 }
 
+#powercord-spotify-modal .avatarWrapper-2yR4wp{
+    position: relative;
+    left:0;
+    box-shadow: none !important;
+}
+
+#powercord-spotify-modal{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .unreadMentionsIndicatorBottom-BXS58x{
     transform: translateY(-40px);
     -webkit-transform: translateY(-40px);
@@ -1195,7 +1247,7 @@ body::after {
     -ms-transform: translateY(-40px);
     -o-transform: translateY(-40px);
 }
-.container-3baos1 .avatar-SmRMf2{
+.container-3baos1:not(#powercord-spotify-modal) .avatar-SmRMf2{
     box-shadow: 0 0 30px 5px;
 }
 
@@ -1629,15 +1681,6 @@ html:not([lang])::before{
     caret-color: currentColor;
 }
 
-body{
-    counter-reset: lines;
-}
-
-.markup-2BOw-j code::first-line::before{
-    counter-increment: lines;
-    content: counter(lines);
-}
-
 .dividerEnabled-2TTlcf{
     display: none;
 }
@@ -1780,7 +1823,7 @@ body{
     width: -webkit-fill-available;
 }
 
-.modal-1sor29, .modalOverhang-3WFc1y, .modal-yWgWj-, .uploadModal-2ifh8j, .container-jGk-CT, .header-fqGmwY, .inner-1ilYF7 .imageWrapper-2p5ogY, .inner-1ilYF7 .anchor-3Z-8Bb, .container-3qKHyN, .container-2Yth53, .uploadModalIn-1z07Bv{
+.modal-1sor29, .modalOverhang-3WFc1y, .modal-yWgWj-, .container-jGk-CT, .header-fqGmwY, .inner-1ilYF7 .imageWrapper-2p5ogY, .inner-1ilYF7 .anchor-3Z-8Bb, .container-3qKHyN, .container-2Yth53, .uploadModalIn-1z07Bv{
     margin: auto;
 }
 
@@ -2161,8 +2204,8 @@ body{
     display: none;
 }
 
-.iconContainer-2ZxvJk, .itemBase-1Qj4z6{
-    margin: 0;
+.iconContainer-2ZxvJk, .itemBase-1Qj4z6, .itemBase-1Qj4z6 .checkbox-1wLOv4{
+    margin: 0 auto;
 }
 
 .premiumGuildIcon-BhwtRn{
@@ -2192,8 +2235,21 @@ body{
     border-color: var(--main-color);
 }
 
+.input-cIJ7To{
+    border-radius: var(--main-border-radius);
+    -webkit-border-radius: var(--main-border-radius);
+    -moz-border-radius: var(--main-border-radius);
+    -ms-border-radius: var(--main-border-radius);
+    -o-border-radius: var(--main-border-radius);
+}
+
 .layer-v9HyYc[style^="left: -"]{
     left: 10px !important;
+}
+
+.itemBase-1Qj4z6{
+    min-height: 48px;
+    width: 48px;
 }
 
 .statusItem-2uzPIV:hover:nth-child(1){
@@ -2212,6 +2268,199 @@ body{
     border-bottom-color: rgb(116, 127, 141);
 }
 
+.uploadModal-2ifh8j{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: transparent !important;
+}
+
+.footer-3mqk7D{
+    background: #0006 !important;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.image-2yrs5j{
+    margin-top: 0;
+}
+
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K{
+    margin: 20px 0 40px 0;
+}
+
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .description-2ug5H_{
+    padding: 0;
+    margin: auto 0;
+    height: unset;
+}
+
+.uploadModal-2ifh8j .footer-3mqk7D .checkboxWrapper-SkhIWG{
+    position: fixed;
+    top: 70px;
+    right: 30px;
+}
+
+.uploadModal-2ifh8j .footer-3mqk7D .hasSpoilers-1IRtQC .button-38aScr + div{
+    position: absolute;
+    right: 20px;
+}
+
+.statusItem-2uzPIV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemBase-1Qj4z6 .clearStatus-2hmUqc, .itemBase-1Qj4z6 .customStatus-1KPfFb .customStatusText-Kh6K1M{
+    display: none;
+}
+
+.customStatus-1KPfFb{
+    margin: 0 auto;
+}
+
+.customStatusEmoji-2NpCsS{
+    height: 24px;
+    width: 24px;
+    margin: 0;
+}
+
+.theme-dark .tile-2OwFgW{
+    background: #20222588;
+}
+
+#app-mount .channel-2QD9_O[href="/activity"], #app-mount .channel-2QD9_O[href="/channels/@me"]:not([href="/channels/@me/"]), #app-mount .channel-2QD9_O[href="/library"], #app-mount .channel-2QD9_O[href="/store"] {
+    display: inline-block;
+    transition: 150ms ease all;
+    margin-left: 8px;
+    margin-top: 0;
+    padding: initial;
+    width: calc(25% - 10px);
+    background: 0 0;
+    box-shadow: none;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.textArea-2Spzkt {
+    max-height: 144px;
+}
+
+.chat-3bRxxu .content-yTz4x3 *:nth-child(1):nth-last-child(1) .chatContent-a9vAAp form .buttons-205you{
+    margin-right: 200px;
+}
+
+.authBoxExpanded-2jqaBe{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.centeringWrapper-2Rs1dR, .centeringWrapper-2Rs1dR .flex-1O1GKY{
+    height: 100%;
+}
+
+.block-egJnc0{
+    margin: auto 20px;
+    background: #0003;
+    padding: 20px;
+    width: calc(100% - 100px);
+    border-radius: 15px;
+    box-shadow:  0 0 20px 5px #000;
+    backdrop-filter: blur(5px);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.authBox-hW6HRx img[alt]:not(.qrLoginInner-c_7ePj img[alt]), .title-jXR8lp:not(.qrLoginInner-c_7ePj .title-jXR8lp), .subTitle-3TUjmF:not(.qrLoginInner-c_7ePj .subTitle-3TUjmF){
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.qrCodeOverlay-qgtlTP{
+    height: 176px;
+}
+
+.logo-2iEHEq{
+    display: none;
+}
+
+.title-jXR8lp:not(.qrLoginInner-c_7ePj .title-jXR8lp){
+    margin-top: 90px;
+}
+
+.subTitle-3TUjmF:not(.qrLoginInner-c_7ePj .subTitle-3TUjmF){
+    margin-top: 140px;
+}
+
+img[alt] + .title-jXR8lp + .subTitle-3TUjmF + .block-egJnc0{
+    position: fixed;
+    width: 50%;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%) translateY(-40%);
+    -webkit-transform: translateX(-50%) translateY(-40%);
+    -moz-transform: translateX(-50%) translateY(-40%);
+    -ms-transform: translateX(-50%) translateY(-40%);
+    -o-transform: translateX(-50%) translateY(-40%);
+}
+
+.authBox-hW6HRx{
+    background: transparent;
+    box-shadow: none;
+}
+
+
+
+
+.authBox-hW6HRx{
+    width: 100%;
+}
+
+.verticalSeparator-3huAjp{
+    border: none;
+}
+
+.qrLogin-1AOZMt{
+    margin: auto 32px auto 0;
+}
+
+.subTitle-3TUjmF{
+    color: #ddd;
+}
+
+.mainLoginContainer-1ddwnR .title-jXR8lp, .mainLoginContainer-1ddwnR .subTitle-3TUjmF{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.mainLoginContainer-1ddwnR .subTitle-3TUjmF{
+    margin-top: 40px;
+}
+
+.theme-dark .root-1BQpZw {
+    background-color: transparent;
+}
 
 
 
