@@ -4,6 +4,6 @@
     "version": "0.4",
     "author": "A user#0001",
     "license": "MIT",
-    "theme": "bash-dev-ver.css",
+    "theme": "bash.css",
     "consent": "false"
   }
