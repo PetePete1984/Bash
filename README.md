@@ -1,7 +1,5 @@
 # Bash
 
-**⚠️ WARNING: THIS THEME STILL IN DEVELOPMENT. BUGS ARE COMMOM. IF YOU FIND ANY, PLEASE DM A user#0001⚠️**
-
 A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors! [How to install (BD)](https://0x71.cc/bd/guide/#installthemesplugins)
 
 Settings (like changing bg, color, transparency, etc...) there's in the file
