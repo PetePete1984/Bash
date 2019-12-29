@@ -66,6 +66,8 @@
   content: "BNF"; }
 #app-mount .markup-2BOw-j .hljs[class~="brainfuck" i]:before {
   content: "Brainfuck"; }
+#app-mount .markup-2BOw-j .hljs[class~="bf" i]:before {
+  content: "Brainfuck"; }
 #app-mount .markup-2BOw-j .hljs[class~="c" i]:before {
   content: "C/C++"; }
 #app-mount .markup-2BOw-j .hljs[class~="cc" i]:before {
