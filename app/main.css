@@ -5,6 +5,29 @@
 @import url("https://a-user-s-discord-themes.github.io/Bash/external%20plugins/update.css"); /*This will enable when a update on settings is made*/
 @import url('https://uppercaseuser.github.io/LTD/app.css'); /*Light Theme blocker*/
 @import url('https://a-user-s-discord-themes.github.io/OnlyIconsOnMenus/app.css'); /*Only Icons On Menus*/
+@import url("https://a-user-s-discord-themes.github.io/Custom-Avatar-Hint/app/language-hell.css"); /*Custom Avatars Hint side effect fixer*/
+@import url('https://a-user-s-discord-themes.github.io/Custom-Avatar-Hint/app/database.css'); /*Custom Avatar Hints*/
+
+:root{
+    /* BG Settings */
+    --background: url("https://i2.wp.com/www.123freevectors.com/wp-content/original/132463-cool-blue-geometric-shapes-background.jpg?w=800&q=95"); /*Your BG*/
+    --background-black-opacity: .5; /*Here you can set how dark you want for your background. No image editing*/
+    --background-opacity: .7; /*Opacity of your background. Set to 1 if you don't use transparency BD feature*/
+    --background-radius: 5px; /*Set the radius Discord. Set to 0 if you don't use transparency BD feature. Disabled for linux because it's ugly this enabled in discord with frame*/
+    
+    /*Color Settings*/
+    --main-color: #2956c9; /*Replace some colors*/
+    --ping-color: var(--main-color); /*Pings Color. Original value is #f04747*/
+    --text-normal: #dcddde; /*Text Color. You can change it to black if you use a white background. Original is #dcddde*/
+    --text-link: var(--main-color); /*Links Color. Original value is #00b0f4*/
+    --message-indicator-color: #fff; /*Message Color. Original value is #fff*/
+
+    /*Other Settings*/
+    --text-send-message-background: transparent; /*Sets the bg of the text area. Default is #40444b60*/
+    --icon-image: url("https://cdn.discordapp.com/attachments/539180316447997974/651605523656867891/output.png");
+    --main-border-radius: 30px; /*Border Radious for buttons, channels, etc. I recomend to NOT put 50%*/
+    --font: "Product Sans"; /*Font of Discord. Original is: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif*/
+}
 
 /*Fonts*/
 @font-face {font-family: "Blox (BRK)"; src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot"); src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff") format("woff"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.svg#Blox (BRK)") format("svg"); } /*Blox BRK*/
@@ -442,8 +465,12 @@
     border-bottom-left-radius: 0;
 }
 
+.unreadMentionsIndicatorTop-gA6RCh{
+    margin-top: 55px;
+}
+
 .platform-osx .unreadMentionsIndicatorTop-gA6RCh {
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .unreadMentionsIndicatorBottom-BXS58x, .unreadMentionsIndicatorTop-gA6RCh{
@@ -524,7 +551,7 @@
 }
 
 .bda-slist li[data-name="Bash"] .bda-version:after{
-    content: "1.0";
+    content: "1.1";
     visibility: visible;
     word-spacing:normal;
     letter-spacing:normal; 
@@ -916,10 +943,6 @@
     -o-border-radius: 0;
 }
 
-.platform-win .layer-v9HyYc:nth-child(1):not(.disabledPointerEvents-1ptgTB)[style*="right"]:not([style*="bottom: 280px;"]):not([style*="button"]) .contextMenu-HLZMGh{
-    padding-top: 50px;
-}
-
 .container-3baos1 .button-14-BFJ{
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -1300,6 +1323,7 @@ body::after {
     background-position: center;
     width: 30px;
     height: 30px;
+    margin-top: -2px;
 }
 
 .channelTextArea-rNsIhG .buttons-205you{
@@ -1527,16 +1551,6 @@ html:not([lang])::before{
 
 .creationDate{
     grid-column: span 2;
-}
-
-.container-2ax-kl{
-    opacity: .6;
-    color: var(--main-color) !important;
-    transition: all 100ms;
-    -webkit-transition: all 100ms;
-    -moz-transition: all 100ms;
-    -ms-transition: all 100ms;
-    -o-transition: all 100ms;
 }
 
 .members-1998pB:not(:hover) .container-2ax-kl{
@@ -2398,8 +2412,7 @@ img[alt] + .title-jXR8lp + .subTitle-3TUjmF + .block-egJnc0{
     padding: 12px 16px;
 }
 
-
-.protip-YaFfgO {
+.protip-YaFfgO, .protip-3-1FNm{
     position:fixed;
     top:0;
     right:0;
@@ -2633,7 +2646,7 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
 .uploadModal-2ifh8j::before{content: "Tip: Press esc to cancel"; bottom: 90px;}
 .platform-win .animator-US5i9g::before{bottom: 90px;}
 
-[class*="topSection"] .avatar-3EQepX{
+[class^="topSection"] .avatar-3EQepX{
     transition: all 200ms;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
@@ -2641,7 +2654,7 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
     -o-transition: all 200ms;
 }
 
-[class*="topSection"] .avatar-3EQepX:active{
+[class^="topSection"] .avatar-3EQepX:active{
     width: 150px !important;
     height: 150px !important;
 }
@@ -2713,6 +2726,162 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
     background: transparent
 }
 
+.wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN {
+  contain: none;
+}
+
+.wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN > .listItem-2P_4kh:first-child {
+    top: 0;
+    position: sticky !important;
+    z-index: 1;
+}
+
+.childWrapper-anI2G9{
+    background-color: #0006 !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+
+.emoji.jumboable[aria-label=":pick:"]{animation: pick .5s infinite linear;-webkit-animation: pick .5s infinite linear;} @keyframes pick {0%,100%{transform: rotate(45deg);}50%{transform: rotate(-25deg);}}
+
+.avatarHint-1qgaV3 .avatarHintInner-Dco91E{
+    font-size: 0;
+    text-transform: none;
+}
+
+.avatarHint-1qgaV3 .avatarHintInner-Dco91E::after{
+    white-space: normal;
+    text-align: center;
+    content: var(--avatar-hint-text);
+    color: var(--avatar-hint-color);
+    font-size: var(--avatar-hint-size);
+    font-family: var(--avatar-hint-font);
+}
+
+.itemActive-2V2HNc{
+    background: #1F2024;
+    cursor: default;
+    border-bottom-color: transparent !important;
+}
+
+.itemActive-2V2HNc svg{
+    opacity: .5;
+}
+
+.itemActive-2V2HNc::before{
+    content: "Already setted";
+    display: none;
+    position: absolute;
+    top: -44px;
+    opacity: 1;
+    background: #000;
+    box-shadow: var(--elevation-high);
+    padding: 8px 12px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.itemActive-2V2HNc::after{
+    content: "";
+    display: none;
+    position: absolute;
+    top: -12px;
+    margin-left: 0;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    pointer-events: none;
+    z-index: -1;
+    border-top-color: #000;
+}
+
+.itemActive-2V2HNc:hover::after{
+    display: block;
+}
+
+.itemActive-2V2HNc:hover::before{
+    display: block;
+}
+
+.isLocalBot-38G0P0{
+    background: #fff1;
+    margin-right: 60px;
+    margin-left: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.isLocalBot-38G0P0 .contentCozy-3XX413, .localBotMessage-1cGMdw{
+    margin-left: 40px;
+}
+
+.isLocalBot-38G0P0 .headerCozy-2N9HOL{
+    display: none;
+}
+
+.topPill-30KHOu {
+    -webkit-app-region: no-drag;
+}
+
+.screenshareIcon-2redWJ{
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.live-vBWnV6{
+    width: 15px; height: 15px;
+    color: transparent;
+}
+
+.liveIconSpacing-2doiiT{
+    left:-20px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.rtcConnectionStatus-2-jIsi .active-2h1NLh{
+    height: 100%;
+    y: 0;
+}
+
+.rtcConnectionStatus-2-jIsi .ping-2NgC8E rect:nth-child(1){
+    animation: internetRTCAnim 2s infinite linear;
+    -webkit-animation: internetRTCAnim 2s infinite linear;
+}
+
+.rtcConnectionStatus-2-jIsi .ping-2NgC8E rect:nth-child(2){
+    animation: internetRTCAnim 1.5s infinite linear;
+    -webkit-animation: internetRTCAnim 1.5s infinite linear;
+}
+
+.rtcConnectionStatus-2-jIsi .ping-2NgC8E rect:nth-child(3){
+    animation: internetRTCAnim 2.5s infinite linear;
+    -webkit-animation: internetRTCAnim 2.5s infinite linear;
+}
+
+.root-SR8cQa, .uploadModal-2ifh8j, .contextMenu-HLZMGh, .theme-light .animator-US5i9g{
+    background: #0006 !important;
+}
+
+
+
+
+
+
 
 
 /*Anims*/
@@ -2765,4 +2934,9 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
     }
+}
+
+@keyframes internetRTCAnim{
+    0%, 100%{height: 100%;y:0;}
+    50% {height: 25%;y:9;}
 }
