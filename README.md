@@ -1,15 +1,15 @@
-# Bash
+<h1 align=center> Bash </h1>
 
-A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors! [How to install (BD)](https://0x71.cc/bd/guide/#installthemesplugins)
+<p align=center>A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors! [How to install (BD)](https://0x71.cc/bd/guide/#installthemesplugins)</p>
 
-Settings (like changing bg, color, transparency, etc...) there's in the file
+<p align=center>Settings (like changing bg, color, transparency, etc...) are inside the theme file</p>
 
 Previews:
 
-![Windows](https://cdn.discordapp.com/attachments/539180316447997974/655212765551656961/unknown.png)
+![](https://cdn.discordapp.com/attachments/539180316447997974/661625922994044938/1.png)
 
-![MacOS](https://cdn.discordapp.com/attachments/539180316447997974/655213250417524760/unknown.png)
+![](https://cdn.discordapp.com/attachments/539180316447997974/661625934239105115/2.png)
 
-![Linux](https://cdn.discordapp.com/attachments/539180316447997974/655213568593231873/unknown.png)
+![](https://cdn.discordapp.com/attachments/539180316447997974/661625919785664532/3.png)
 
-![Linux (Settings opened)](https://cdn.discordapp.com/attachments/539180316447997974/655213943249436673/unknown.png)
+![](https://cdn.discordapp.com/attachments/539180316447997974/661625903259844618/4.png)
