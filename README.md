@@ -4,7 +4,7 @@
 
 <p align=center>Settings (like changing bg, color, transparency, etc...) are inside the theme file</p>
 
-Previews:
+#### Previews:
 
 ![](https://cdn.discordapp.com/attachments/539180316447997974/661625922994044938/1.png)
 
@@ -13,3 +13,8 @@ Previews:
 ![](https://cdn.discordapp.com/attachments/539180316447997974/661625919785664532/3.png)
 
 ![](https://cdn.discordapp.com/attachments/539180316447997974/661625903259844618/4.png)
+
+
+#### Links:
+
+[<img src="https://i.redd.it/cpk12az6mo141.png" alt="drawing" width="100"/>](https://discord.gg/jGmSTkk)
