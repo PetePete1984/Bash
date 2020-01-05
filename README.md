@@ -1,6 +1,7 @@
 <h1 align=center> Bash </h1>
 
-<p align=center>A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors! [How to install (BD)](https://0x71.cc/bd/guide/#installthemesplugins)</p>
+<p align=center>A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors!</p>
+[How to install (BD)](https://0x71.cc/bd/guide/#installthemesplugins)
 
 <p align=center>Settings (like changing bg, color, transparency, etc...) are inside the theme file</p>
 
@@ -17,4 +18,4 @@
 
 #### Links:
 
-[<img src="https://i.redd.it/cpk12az6mo141.png" alt="drawing" width="100"/>](https://discord.gg/jGmSTkk)
+[<img src="https://i.redd.it/cpk12az6mo141.png" alt="drawing" width="50"/>](https://discord.gg/jGmSTkk)
