@@ -337,49 +337,10 @@
     padding-left: 8px;
 }
 
-/*Code setup*/
-#app-mount .markup-2BOw-j .hljs:before{
-    display: block;
-    background: #0004;
-    color: #fff;
-    padding: 4px;
-    margin-bottom: 8px;
-    text-align: center;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-}
-
 .markup-2BOw-j .hljs{
     background: #0004;
     backdrop-filter: blur(5px);
 }
-
-.markup-2BOw-j .hljs:not([class$=hljs]){
-    padding-top: 5px !important;
-}
-
-.markup-2BOw-j pre{
-    padding: 0px;
-    background: transparent !important;
-}
-
-#app-mount .markup-2BOw-j code[style$="hljs" i]::before{
-    display: none;
-}
-
-.powercord-codeblock-lang:not(:empty){
-    display: none;
-}
-
-.hljs:not([class$=hljs]) .powercord-lines:after {
-    margin-top: 13px;
-}
-
-
-/*Exit Code Setup*/
 
 :root{
     --disabler-text: 'Please disable light theme.\a Bash does not support light theme';
