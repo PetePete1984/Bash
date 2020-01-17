@@ -1,16 +1,29 @@
-@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css'); /*Custom Covers Database (Check https://github.com/Discord-Custom-Covers/usrbg for more informations)*/
+//META{"name":"Bash (Dev ver)","description":"A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors!","author":"A user","version":"1.0 Dev version"}*//{}
+
+@import url('https://discord-custom-covers.github.io/usrbg/powercord/database.css'); /*Custom Covers Database (Check https://github.com/Discord-Custom-Covers/usrbg for more informations)*/
 @import url("https://a-user-s-discord-themes.github.io/Bash/external%20plugins/update.css"); /*This will enable when a update on settings is made*/
 @import url('https://uppercaseuser.github.io/LTD/app.css'); /*Light Theme blocker*/
 @import url('https://a-user-s-discord-themes.github.io/OnlyIconsOnMenus/app.css'); /*Only Icons On Menus*/
 @import url("https://a-user-s-discord-themes.github.io/Custom-Avatar-Hint/app/language-hell.css"); /*Custom Avatars Hint side effect fixer*/
 @import url('https://a-user-s-discord-themes.github.io/Custom-Avatar-Hint/app/database.css'); /*Custom Avatar Hints*/
 
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face {font-family: "Blox (BRK)"; src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot"); src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff") format("woff"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.svg#Blox (BRK)") format("svg"); } /*Blox BRK*/
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
 :root{
     /* BG Settings */
     --background: url("https://i2.wp.com/www.123freevectors.com/wp-content/original/132463-cool-blue-geometric-shapes-background.jpg?w=800&q=95"); /*Your BG*/
     --background-black-opacity: .5; /*Here you can set how dark you want for your background. No image editing*/
     --background-opacity: .7; /*Opacity of your background. Set to 1 if you don't use transparency BD feature*/
-    --background-radius: 5px; /*Set the radius Discord. Set to 0 if you don't use transparency BD feature. Disabled for linux because it's ugly this enabled in discord with frame*/
+    --background-radius: 10px; /*Set the radius Discord. Set to 0 if you don't use transparency BD feature. Disabled for linux because it's ugly this enabled in discord with frame*/
     
     /*Color Settings*/
     --main-color: #2956c9; /*Replace some colors*/
@@ -24,16 +37,6 @@
     --icon-image: url("https://cdn.discordapp.com/attachments/539180316447997974/651605523656867891/output.png");
     --main-border-radius: 30px; /*Border Radious for buttons, channels, etc. I recomend to NOT put 50%*/
     --font: "Product Sans"; /*Font of Discord. Original is: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif*/
-}
-
-/*Fonts*/
-@font-face {font-family: "Blox (BRK)"; src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot"); src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff") format("woff"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.svg#Blox (BRK)") format("svg"); } /*Blox BRK*/
-
-@font-face {
-  font-family: 'Product Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
 /*Start of the REAL code*/
@@ -91,8 +94,8 @@
     -o-border-radius: 10px;
 }
 
-.layer-3QrUeG[aria-label="USER_SETTINGS"]{
-    background: #0004;
+.layer-3QrUeG[aria-label="USER_SETTINGS"], .enterActive-14DLLh, .enterDone-2zvtsK, .exit-1xyzxd{
+    background: #000c;
 }
 
 .standardSidebarView-3F1I7i{
@@ -548,7 +551,7 @@
 }
 
 .bda-slist li[data-name="Bash"] .bda-version:after{
-    content: "1.0";
+    content: "1.1";
     visibility: visible;
     word-spacing:normal;
     letter-spacing:normal; 
@@ -789,16 +792,6 @@
     width: min-content;
 }
 
-.userPopout-3XzG_A .header-2BwW8b .headerTop-3C2Zn0{
-    display: grid;
-    width: -webkit-fill-available;
-    grid-template-columns: 1fr 1fr;
-}
-
-.userPopout-3XzG_A .header-2BwW8b .headerTop-3C2Zn0 .customStatus-1bh2V9{
-    grid-column: span 2;
-}
-
 .headerTop-3C2Zn0 .bot-2Fta1w{
     display: none;
 }
@@ -1015,7 +1008,7 @@ body::after {
     position: fixed;
     bottom: 8px;
     right: 8px;
-    z-index: 1;
+    z-index: 1000;
     opacity: .6;
 }
 
@@ -1445,31 +1438,7 @@ body::after {
 }
 
 #pluginNotice{
-    top: -25px;
-    -webkit-app-region:drag;
-    border-radius: 0 0 10px 10px !important;
-    -webkit-border-radius: 0 0 10px 10px !important;
-    -moz-border-radius: 0 0 10px 10px !important;
-    -ms-border-radius: 0 0 10px 10px !important;
-    -o-border-radius: 0 0 10px 10px !important;
-    transition: top 200ms !important;
-    -webkit-transition: top 200ms !important;
-    -moz-transition: top 200ms !important;
-    -ms-transition: top 200ms !important;
-    -o-transition: top 200ms !important;
-}
-
-.platform-win #pluginNotice, .platform-osx #pluginNotice{
     top: 58px;
-    border-radius: 30px !important;
-    -webkit-border-radius: 30px !important;
-    -moz-border-radius: 30px !important;
-    -ms-border-radius: 30px !important;
-    -o-border-radius: 30px !important;
-}
-
-.platform-linux #pluginNotice:hover{
-    top: 0;
 }
 
 .checkbox-1ix_J3, .checkbox-3kaeSU .checkboxInner-3yjcPe span{
@@ -1506,8 +1475,73 @@ body::after {
     border-bottom-color: var(--main-color);
 }
 
-.header-2tA9Os{
-    background: rgba(0, 0, 0, 0.2);
+.header-2tA9Os .header-2kr4wt{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: .0125em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-2tA9Os + .content-1EtbQh .medium-zmzTW-{
+    font-family: 'Roboto', sans-serif;
+}
+
+.theme-dark .footer-3rDWdC{
+    background: transparent;
+    box-shadow: none;
+}
+
+.modal-yWgWj- .button-38aScr{
+    font-weight: 600;
+    color: var(--main-color) !important;
+    letter-spacing: .0892857143em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: .875rem;
+    text-decoration: none !important;
+}
+
+.modal-yWgWj- .button-38aScr::before{
+    content: "";
+    background: var(--main-color);
+    opacity: 0;
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    transition: opacity 100ms;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-transition: opacity 100ms;
+    -moz-transition: opacity 100ms;
+    -ms-transition: opacity 100ms;
+    -o-transition: opacity 100ms;
+}
+
+.modal-yWgWj- .colorRed-1TFJan,.modal-yWgWj- .colorPrimary-3b3xI6,.modal-yWgWj- .colorBrand-3pXr91{
+    background: transparent !important;
+}
+
+.modal-yWgWj- .button-38aScr:hover::before{
+    opacity: .2;
+}
+
+.modal-yWgWj- .button-38aScr:hover{
+    text-decoration: transparent;
+}
+
+.modal-yWgWj-{
+    box-shadow: none !important;
+    background: rgb(24, 26, 27) !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 body{
@@ -2872,6 +2906,191 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
 .root-SR8cQa, .uploadModal-2ifh8j, .contextMenu-HLZMGh, .theme-light .animator-US5i9g, .userPopout-3XzG_A{
     background: #000a !important;
 }
+
+.headerXbox-3G-4PF .headerText-2sdzFM .nameTag-m8r81H .username-2b1r56{
+    color: #107c10
+}
+
+.headerXbox-3G-4PF .activityName-1IaRLn, .headerXbox-3G-4PF .textRow-19NEd_{
+    color: #107c10
+}
+
+.headerXbox-3G-4PF .lookOutlined-3sRXeN.colorWhite-rEQuAQ{
+    color: #107c10;
+    border-color: #107c1060;
+}
+
+.headerXbox-3G-4PF .xboxButtonLogo-1udUda{
+    margin-right: 8px;
+}
+
+.headerSpotify-zpWxgT .headerText-2sdzFM .nameTag-m8r81H .username-2b1r56{
+    color: #1db954
+}
+
+.headerSpotify-zpWxgT .activityName-1IaRLn, .headerSpotify-zpWxgT .textRow-19NEd_{
+    color: #1db954;
+}
+
+.headerSpotify-zpWxgT .lookOutlined-3sRXeN.colorWhite-rEQuAQ, .headerSpotify-zpWxgT .listenAlongIcon-2vb1HG{
+    color: #1db954;
+    border-color: #1db95460;
+}
+
+/*[aria-label="USER_SETTINGS"]{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    z-index: 0;
+}
+
+[aria-label="USER_SETTINGS"] .closeButton-1tv5uR{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3003;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}*/
+
+.layer-3QrUeG.baseLayer-35bLyl{
+    opacity: 1 !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+}
+
+.chat-3bRxxu form .typing-2GQL18 {
+    top: -40px;
+    right: 0;
+    left: unset;
+    transform-origin: bottom left;
+    width: auto;
+    padding: 0 20px;
+    background: #000a;
+    border-radius: var(--main-border-radius);
+    box-shadow: 0 0 10px 1px #000;
+    margin: 0;
+    opacity: .5;
+    transition: all .2s ease;
+    text-overflow: ellipsis;
+    z-index: 1;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -webkit-border-radius: var(--main-border-radius);
+    -moz-border-radius: var(--main-border-radius);
+    -ms-border-radius: var(--main-border-radius);
+    -o-border-radius: var(--main-border-radius);
+}
+
+.chat-3bRxxu form .typing-2GQL18:hover{
+    opacity: 1;
+}
+
+.channelTextArea-rNsIhG{
+    margin-bottom: 20px;
+}
+
+[aria-label="USER_SETTINGS"]{
+    z-index: 100;
+}
+
+/* Better Jump Links */
+a[href*='https://canary.discordapp.com/channels/']{
+    text-decoration: none !important;
+    cursor: default;
+}
+
+a[href*='https://canary.discordapp.com/channels/']::after{
+    content: 'Jump';
+    visibility: visible!important;
+    text-decoration: none !important;
+    position: absolute;
+    pointer-events: visible;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    height: 15px;
+    padding: 2px 8px;
+    opacity: 0;
+    margin: 3px;
+    display: inline-block;
+    transition: opacity 200ms;
+    background-color: #535559;
+    color: hsla(0,0%,100%,.6);
+    -webkit-transition: opacity 200ms;
+    -moz-transition: opacity 200ms;
+    -ms-transition: opacity 200ms;
+    -o-transition: opacity 200ms;
+}
+
+a[href*='https://canary.discordapp.com/channels/']:hover::after{
+  opacity: 1;
+}
+
+.toast{
+    border: none;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.userPopout-3XzG_A{
+    width: 500px;
+    min-height: 300px;
+    /*max-height: 500px;*/
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+}
+
+.headerNormal-T_seeN{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-3iLsc4{
+    width: 100%;
+}
+
+.quickMessage-1yeL4E{
+    display: none;
+}
+
+/* Scroller s
+.expandedGuilds-1JMD4M,.guilds-1SWlCJ,.listItem-2P_4kh,.scroller-2TZvBN,.scrollerWrap-1IAIlv {
+    max-width: 65px;
+}
+#app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv ::-webkit-scrollbar {
+    max-width: 7px;
+}
+#app-mount .wrapper-1Rf91z .scrollerWrap-1IAIlv ::-webkit-scrollbar-thumb {
+    background: white;
+}
+.expandedFolderBackground-2sPsd- {
+    left: 8px;
+}
+
+.scroller-2wx7Hm::-webkit-scrollbar{
+    width: 7px;
+}
+
+.scroller-2wx7Hm::-webkit-scrollbar-thumb{
+    background: white;
+}*/
 
 
 
