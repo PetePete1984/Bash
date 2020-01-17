@@ -1595,7 +1595,8 @@ html:not([lang])::before{
     -o-transition: opacity 200ms;
 }
 
-.sidebar-2K8pFh:hover .animatedContainer-1pJv5C,.sidebar-2K8pFh:hover .bannerImage-1jOskm {
+.sidebar-2K8pFh:hover .animatedContainer-1pJv5C,.sidebar-2K8pFh:hover .bannerImage-1jOskm,
+.guilds-1SWlCJ:hover + .base-3dtUhz .sidebar-2K8pFh .animatedContainer-1pJv5C, .guilds-1SWlCJ:hover + .base-3dtUhz .sidebar-2K8pFh  .bannerImage-1jOskm{
     opacity: 1;
 }
 
