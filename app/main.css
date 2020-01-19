@@ -2752,7 +2752,7 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
 }
 
 .itemActive-2V2HNc::before{
-    content: "Already setted";
+    content: "Already set";
     display: none;
     position: absolute;
     top: -44px;
