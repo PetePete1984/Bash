@@ -3106,6 +3106,7 @@ a[href*='https://canary.discordapp.com/channels/']:hover::after{
 }
 
 .backdrop-1wrmKB::before{
+    font-weight: bolder;
     content: "X";
     text-align: center;
     vertical-align: middle;
