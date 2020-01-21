@@ -8,13 +8,11 @@
 
 #### Previews:
 
-![](https://cdn.discordapp.com/attachments/539180316447997974/661625922994044938/1.png)
+![](https://cdn.discordapp.com/attachments/539180316447997974/669002327474044928/unknown.png)
 
-![](https://cdn.discordapp.com/attachments/539180316447997974/661625934239105115/2.png)
+![](https://cdn.discordapp.com/attachments/539180316447997974/669000794439286823/unknown.png)
 
-![](https://cdn.discordapp.com/attachments/539180316447997974/661625919785664532/3.png)
-
-![](https://cdn.discordapp.com/attachments/539180316447997974/668085162718003220/IMG_20200118_113114.png)
+![](https://cdn.discordapp.com/attachments/539180316447997974/669001854201364494/unknown.png)
 
 
 #### Links:
