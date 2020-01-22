@@ -1,5 +1,3 @@
-//META{"name":"Bash (Dev ver)","description":"A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors!","author":"A user","version":"1.0 Dev version"}*//{}
-
 @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css'); /*Custom Covers Database (Check https://github.com/Discord-Custom-Covers/usrbg for more informations)*/
 @import url("https://a-user-s-discord-themes.github.io/Bash/external%20plugins/update.css"); /*This will enable when a update on settings is made*/
 @import url('https://uppercaseuser.github.io/LTD/app.css'); /*Light Theme blocker*/
@@ -37,6 +35,11 @@
     --icon-image: url("https://cdn.discordapp.com/attachments/539180316447997974/651605523656867891/output.png");
     --main-border-radius: 30px; /*Border Radious for buttons, channels, etc. I recomend to NOT put 50%*/
     --font: "Product Sans"; /*Font of Discord. Original is: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif*/
+}
+
+/*Version*/
+:root{
+    --bash-version: "1.2.1";
 }
 
 /*Start of the REAL code*/
@@ -512,7 +515,7 @@
 }
 
 .bda-slist li[data-name="Bash"] .bda-version:after{
-    content: "1.2";
+    content: var(--bash-version);
     visibility: visible;
     word-spacing:normal;
     letter-spacing:normal; 
@@ -967,6 +970,7 @@ body::after {
     right: 8px;
     z-index: 1000;
     opacity: .6;
+    pointer-events: none;
 }
 
 .members-1998pB{
@@ -2458,21 +2462,8 @@ img[alt] + .title-jXR8lp + .subTitle-3TUjmF + .block-egJnc0{
     color: #fff !important;
 }
 
-.or-3THJsp, .header-3ZP1MY{
+.or-3THJsp{
     display: none;
-}
-
-.slideBody-2nMrnU{
-    margin: auto;
-}
-
-.action-1lSjCi {
-    box-shadow: none !important;
-    border: none !important;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    background: transparent !important;
-    margin-left: 0 !important;
 }
 
 .theme-light .modal-yWgWj- .input-1mgnkM, .theme-light .modal-yWgWj- .input-UJ9Tr3{
@@ -2590,15 +2581,6 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
     box-shadow: none;
 }
 
-.theme-light .animator-US5i9g::before, .root-SR8cQa::before, .uploadModal-2ifh8j::before{
-    content: "Tip: Press esc to exit";
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    color: #fff;
-    z-index: 9999999;
-}
-.uploadModal-2ifh8j::before{content: "Tip: Press esc to cancel"; bottom: 90px;}
 .platform-win .animator-US5i9g::before{bottom: 90px;}
 
 [class^="topSection"] .avatar-3EQepX{
@@ -3101,8 +3083,12 @@ a[href*='https://canary.discordapp.com/channels/']:hover::after{
     background: transparent;
 }
 
-[class*="topSection"]{
-    padding-top:35px;
+html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa + div[tabindex="0"]{
+    margin-right: 60px;
+}
+
+html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa, .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa + div[tabindex="0"]{
+    margin-top: -15px;
 }
 
 .backdrop-1wrmKB::before{
@@ -3114,8 +3100,8 @@ a[href*='https://canary.discordapp.com/channels/']:hover::after{
     width: 30px;
     height: 30px;
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 35px;
+    right: 40px;
     font-size: 12px;
     color: #fff;
     border: 2px solid #666;
@@ -3129,8 +3115,25 @@ a[href*='https://canary.discordapp.com/channels/']:hover::after{
     -o-border-radius: 50%;
 }
 
+.platform-win [class*="topSection"]{
+    margin-top: 20px;
+}
+
+.platform-win .backdrop-1wrmKB::before{
+    right: 0;
+    left:10px;
+    top:10px;
+    width:50px;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
 .backdrop-1wrmKB:hover::before{
-    background: #fff1;
+    background: #fff2;
     cursor: pointer;
 }
 
@@ -3140,15 +3143,46 @@ a[href*='https://canary.discordapp.com/channels/']:hover::after{
     z-index: 1001 !important;
 }
 
-.imageWrapper-2p5ogY::before{
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.unknown-3TPTMr{
+    margin-top: -21px;
+}
+
+.modal-3c3bKg .imageWrapper-2p5ogY::before{
     content: "";
     top:0; left: 0;
     position: fixed;
-    background: #0004;
+    background: #0008;
     width: 100%;
     height: 100%;
 }
 
+.creationDate{display: none !important;} /*god i needed to disable creationdate*/
+
+.customStatus-1bh2V9{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+.uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K{
+    margin-top: 50px;
+}
+/*
+.backdrop-1wrmKB::after{
+    content: "";
+    position: fixed;
+    background: #0004;
+    z-index: -1;
+    width: 100%;height: 100%;
+    top:0;left:0;
+    pointer-events: all;
+}
+*/
+
+.size12-3cLvbJ:last-child:after{
+    content: "\a Bash v" var(--bash-version);
+    text-transform: none;
+}
 
 
 
