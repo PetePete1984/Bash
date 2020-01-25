@@ -4,6 +4,8 @@
 
 <p align=center><a href=https://0x71.cc/bd/guide/#installthemesplugins>How to install (BD)</a></p>
 
+<p align=center><a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/A-User-s-Discord-Themes/Bash/blob/master/bash.theme.css>Download (BD)</a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/A-User-s-Discord-Themes/Bash/tree/master/powercord">Download (Powercord)</a></p>
+
 <p align=center>Settings (like changing bg, color, transparency, etc...) are inside the theme file</p>
 
 #### Previews:
