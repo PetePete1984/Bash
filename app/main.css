@@ -39,7 +39,7 @@
 
 /*Version*/
 :root{
-    --bash-version: "1.2.1";
+    --bash-version: "20.1.1";
 }
 
 /*Start of the REAL code*/
@@ -97,7 +97,7 @@
     -o-border-radius: 10px;
 }
 
-.layer-3QrUeG[aria-label="USER_SETTINGS"], .enterActive-14DLLh, .enterDone-2zvtsK, .exit-1xyzxd{
+.layer-3QrUeG[aria-label="USER_SETTINGS"], .layer-3QrUeG[aria-label="GUILD_SETTINGS"], .enterActive-14DLLh, .enterDone-2zvtsK, .exit-1xyzxd{
     background: #000c;
 }
 
@@ -578,6 +578,7 @@
 
 .jumpToPresentBar-9P20AM{
     position: absolute;
+    padding-bottom: 0;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -2184,23 +2185,6 @@ html:not([lang])::before{
     background: #20222588;
 }
 
-#app-mount .channel-2QD9_O[href="/activity"], #app-mount .channel-2QD9_O[href="/channels/@me"]:not([href="/channels/@me/"]), #app-mount .channel-2QD9_O[href="/library"], #app-mount .channel-2QD9_O[href="/store"] {
-    display: inline-block;
-    transition: 150ms ease all;
-    margin-left: 8px;
-    margin-top: 0;
-    padding: initial;
-    width: calc(25% - 10px);
-    background: 0 0;
-    box-shadow: none;
-    border: none;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
 .textArea-2Spzkt {
     max-height: 144px;
 }
@@ -2508,17 +2492,6 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
 
 .avatar-21196O{
     border-color: var(--main-color);
-}
-
-#app-mount .channel-2QD9_O[href="/channels/@me"]:not([href="/channels/@me/"]) .numberBadge-2s8kKX{
-    margin-left: -52px;
-    width: 32px !important;
-    height: 32px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .regionSelectModal-12e-57 .regionSelectModalOption-2DSIZ3 {
@@ -2957,7 +2930,7 @@ a[href*='https://canary.discordapp.com/channels/']:hover::after{
 .userPopout-3XzG_A{
     width: 505px;
     min-height: 250px;
-    max-height: 350px;
+    max-height: 380px;
     display: flex;
     flex-direction: row;
     box-shadow: none;
@@ -3093,7 +3066,10 @@ html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa
 
 .backdrop-1wrmKB::before{
     font-weight: bolder;
-    content: "X";
+    content: "";
+    background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIG5hbWU9IlRpdGxlQmFyQ2xvc2UiIGFyaWEtaGlkZGVuPSJmYWxzZSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiB2aWV3Qm94PSIwIDAgMTIgMTIiIGZpbGw9IiNmZmZmZmYiPiAgPHBvbHlnb24gZmlsbD0iI2ZmZmZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBwb2ludHM9IjExIDEuNTc2IDYuNTgzIDYgMTEgMTAuNDI0IDEwLjQyNCAxMSA2IDYuNTgzIDEuNTc2IDExIDEgMTAuNDI0IDUuNDE3IDYgMSAxLjU3NiAxLjU3NiAxIDYgNS40MTcgMTAuNDI0IDEiLz48L3N2Zz4=  ');
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     vertical-align: middle;
     line-height: 30px;
@@ -3116,7 +3092,7 @@ html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa
 }
 
 .platform-win [class*="topSection"]{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .platform-win .backdrop-1wrmKB::before{
@@ -3133,7 +3109,7 @@ html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa
 }
 
 .backdrop-1wrmKB:hover::before{
-    background: #fff2;
+    background-color: #fff2;
     cursor: pointer;
 }
 
@@ -3179,10 +3155,205 @@ html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa
 }
 */
 
-.size12-3cLvbJ:last-child:after{
-    content: "\a Bash v" var(--bash-version);
+.info-1VyQPT .size12-3cLvbJ:last-child:after{
+    content: "\a Bash ver " var(--bash-version) " by A user#0001";
     text-transform: none;
 }
+
+.friendsTable-133bsv:before{display: none;}
+
+.theme-dark .select-1Pkeg4{
+    border:none;
+    border-radius: var(--main-border-radius);
+    -webkit-border-radius: var(--main-border-radius);
+    -moz-border-radius: var(--main-border-radius);
+    -ms-border-radius: var(--main-border-radius);
+    -o-border-radius: var(--main-border-radius);
+}
+
+.popoutBottom-2GAFPg.noArrow-2foL9g, .popoutBottomLeft-1pG8B4.noArrow-2foL9g, .popoutBottomRight-2Rno5S.noArrow-2foL9g, .css-181m2lf-menu{
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    transform: translateX(-50%) translateY(-50%) !important;
+    -webkit-transform: translateX(-50%) translateY(-50%) !important;
+    -moz-transform: translateX(-50%) translateY(-50%) !important;
+    -ms-transform: translateX(-50%) translateY(-50%) !important;
+    -o-transform: translateX(-50%) translateY(-50%) !important;
+}
+
+.popouts-2bnG9Z .popoutBottom-2GAFPg.noArrow-2foL9g, .popoutBottomLeft-1pG8B4.noArrow-2foL9g, .popoutBottomRight-2Rno5S.noArrow-2foL9g{
+    margin-top:48px !important;
+    animation: fadeAnim 200ms;
+    margin-left: 72px;
+    z-index: 1001;
+}
+
+.theme-dark .popout-2sKjHu{
+    height: 100%;
+    max-height: unset !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background: #000c;
+    animation: fadeAnim 200ms;
+    -webkit-animation: fadeAnim 200ms;
+}
+
+.theme-dark .container-3ayLPN{
+    width: 100% !important;
+    height: -webkit-fill-available;
+    position: relative;
+    box-shadow: 0 0 30px 2px #000 !important;
+    background: #000a !important;
+    border-radius: var(--background-radius);
+    -webkit-border-radius: var(--background-radius);
+    -moz-border-radius: var(--background-radius);
+    -ms-border-radius: var(--background-radius);
+    -o-border-radius: var(--background-radius);
+}
+
+.theme-dark .option-96V44q:after{
+    display: none;
+}
+
+.theme-dark .option-96V44q.selected-rZcOL-{
+    background: #0004;
+}
+
+.theme-dark .container-3ayLPN:empty::before{
+    content: "Type to search something";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    /*font-weight: bold;*/
+    font-size: 20px;
+    color: #bbb;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.calendarPicker-2yf6Ci{
+    width: 100%;
+}
+
+.css-181m2lf-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background: #000c;
+    animation: fadeAnim 200ms;
+    -webkit-animation: fadeAnim 200ms;
+}
+
+.premiumRetentionNotice-2F9O9e{
+    position: fixed;
+    right: 8px;
+    top:105px;
+    z-index: 1001;
+    margin: 0;
+    padding: 0;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+}
+
+.premiumRetentionNoticeContent-1U1AGf, .premiumRetentionNoticeContent-1U1AGf+div[tabindex]{
+    display: none;
+}
+
+.premiumRetentionNotice-2F9O9e:hover{
+    width: 18rem;
+    background: #000;
+    padding: 8px;
+    box-shadow: 0 0 10px 0 #000;
+}
+
+.premiumRetentionNotice-2F9O9e:hover .premiumRetentionNoticeContent-1U1AGf, .premiumRetentionNotice-2F9O9e:hover .premiumRetentionNoticeContent-1U1AGf+div[tabindex]{
+    display: block;
+}
+
+[aria-label="USER_SETTINGS"] div[data-focus-guard="true"] + div[data-focus-lock-disabled="false"]:empty::before{
+    content: 'Somehow you got this. \A Looks like that you found my easter egg \a \a \a - A user, Bash dev';
+    color:#fff;
+    white-space: pre;
+    text-align: center;
+    position: fixed;
+    top:50%;
+    left:50%;
+    font-size: 25px;
+    transform: translate(-50%);
+    animation: fadeAnim 200ms;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -webkit-animation: fadeAnim 200ms;
+}
+
+.container-3baos1 .avatar-SmRMf2.wrapper-3t9DeA{
+    background-color: #000c;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+
+.theme-dark .container-1D34oG, .actionButton-uPB8Fs, .nowPlayingColumn-2sl4cE{
+    background: transparent;
+}
+
+.message-2qnXI6.selected-2P5D_Z, .mouse-mode .message-2qnXI6:hover {
+  background: transparent;
+}
+
+.wrapper-2aW0bm{
+    background: #000a;
+}
+
+.mentioned-xhSam7{
+    background: transparent;
+}
+
+.mentioned-xhSam7::before{
+    background: var(--main-color);
+}
+
+.mentioned-xhSam7::after{
+    content: "";
+    background: var(--main-color);
+    opacity: .2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    z-index: -1;
+}
+
+.divider-3_HH5L.isUnread-3Ef-o9{
+    margin-right: 46px;
+}
+
+.unreadPill-2HyYtt{
+    right: -35px;
+}
+
+
+
 
 
 
