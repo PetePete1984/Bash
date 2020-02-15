@@ -2,10 +2,8 @@
 @import url("https://a-user-s-discord-themes.github.io/Bash/external%20plugins/update.css"); /*This will enable when a update on settings is made*/
 @import url('https://uppercaseuser.github.io/LTD/app.css'); /*Light Theme blocker*/
 @import url('https://a-user-s-discord-themes.github.io/OnlyIconsOnMenus/app.css'); /*Only Icons On Menus*/
-@import url("https://a-user-s-discord-themes.github.io/Custom-Avatar-Hint/app/language-hell.css"); /*Custom Avatars Hint side effect fixer*/
-@import url('https://a-user-s-discord-themes.github.io/Custom-Avatar-Hint/app/database.css'); /*Custom Avatar Hints*/
-
-
+@import url("https://custom-avatar-hints.github.io/hints/app/language-hell.css"); /*Custom Avatars Hint side effect fixer*/
+@import url('https://custom-avatar-hints.github.io/hints/app/database.css'); /*Custom Avatar Hints*/
 
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -25,6 +23,10 @@
     --background-opacity: .7; /*Opacity of your background. Set to 1 if you don't use transparency feature*/
     --background-radius: 10px; /*Set the radius Discord. Set to 0 if you don't use transparency feature. Disabled for linux because it's ugly this enabled in discord with frame*/
     
+    /*Avatar/Server Settings*/
+    --server-radius: 50%; /*Change the server radius*/
+    --avatar-radius: 50%; /*Change the avatar radius*/
+
     /*Color Settings*/
     --main-color: rgb(15, 124, 82); /*Replace some colors*/
     --ping-color: var(--main-color); /*Pings Color. Original value is #f04747*/
@@ -41,7 +43,7 @@
 
 /*Version*/
 :root{
-    --bash-version: "20.2.7";
+    --bash-version: "20.2.15";
 }
 
 /*Start of the REAL code*/
@@ -98,7 +100,7 @@
     -o-border-radius: 10px;
 }
 
-.layer-3QrUeG[aria-label="USER_SETTINGS"], .layer-3QrUeG[aria-label="GUILD_SETTINGS"], .enterActive-14DLLh, .enterDone-2zvtsK, .exit-1xyzxd{
+.layer-3QrUeG[aria-label="USER_SETTINGS"], .layer-3QrUeG[aria-label="GUILD_SETTINGS"], .layer-3QrUeG[aria-label="CHANNEL_SETTINGS"], .enterActive-14DLLh, .enterDone-2zvtsK, .exit-1xyzxd{
     background: #000c;
 }
 
@@ -329,7 +331,7 @@
     z-index: 10000;
 }
 
-.platform-win .notice-2FJMB4, .platform-win .bd-toast{
+.platform-win .notice-2FJMB4, .platform-win .bd-toast, .platform-win .toast{
     top: 50px;
 }
 
@@ -374,7 +376,7 @@
     --background-primary: transparent;
 }
 
-.bd-toast{
+.bd-toast, .toast{
     position: fixed;
     top: 20px;
     right: 20px;
@@ -1530,16 +1532,19 @@ body{
     -o-border-radius: 20px;
 }
 
-html:not([lang])::before{
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    content: "This is a preview - Download it if you liked";
-    font-size: 20px;
+html[lang]::before{
+    content: "The Bash METADATA was updated. Plase redownload the theme";
+    font-size: 15px;
+    display: block;
+    display: var(--metadata-3);
     position: fixed;
-    background: #0004;
+    background: #000a;
     bottom: 0;
-    left: 2.4em;
+    left: 0;
     padding: 5px;
     color: #fff;
+    font-family: var(--font);
+    z-index: 1001;
 }
 
 .creationDate{
@@ -3064,12 +3069,17 @@ a[href*='https://canary.discordapp.com/channels/']:hover::after{
     background: transparent;
 }
 
-html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa + div[tabindex="0"]{
+html:not(.platform-win) [class*="topSection"] .actionButton-3W1xZa + div[tabindex="0"]{
     margin-right: 60px;
 }
 
-html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa, .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa + div[tabindex="0"]{
+html:not(.platform-win) [class*="topSection"] .actionButton-3W1xZa, html:not(.platform-win) [class*="topSection"] .actionButton-3W1xZa + div[tabindex="0"]{
     margin-top: -15px;
+}
+
+html:not(.platform-win) [class*="topSection"] .headerInfo-30uryT + div.horizontal-1ae9ci + div[tabindex="0"]{
+    margin-top: -15px;
+    margin-right: 60px;
 }
 
 .backdrop-1wrmKB::before{
@@ -3164,7 +3174,7 @@ html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa
 */
 
 .info-1VyQPT .size12-3cLvbJ:last-child:after{
-    content: "\a Bash ver " var(--bash-version) " by A user#0001";
+    content: "\a Bash ver " var(--bash-version) " by A user#6560";
     text-transform: none;
 }
 
@@ -3441,7 +3451,7 @@ html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa
     background: transparent;
 }
 
-[aria-label="GUILD_SETTINGS"]{z-index: 1001;}
+[aria-label="GUILD_SETTINGS"], [aria-label="CHANNEL_SETTINGS"]{z-index: 1001;}
 
 .reaction-1hd86g{
     padding: 1px 2px;
@@ -3477,6 +3487,125 @@ html:not(.platform-win) .lookFilled-1Gx00P.colorGreen-29iAKY.actionButton-3W1xZa
     box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 0.4);
 }
 */
+.expanded-13sWhZ{
+    background: #000a;
+    padding-bottom: 20px;
+    border-radius: var(--main-border-radius);
+    -webkit-border-radius: var(--main-border-radius);
+    -moz-border-radius: var(--main-border-radius);
+    -ms-border-radius: var(--main-border-radius);
+    -o-border-radius: var(--main-border-radius);
+}
+
+.multitask-popout .container-1r6BKw{
+    margin-top: -35px;
+    background: #0004;
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+}
+
+.multitask-popout .container-1r6BKw:hover{
+    margin-top: 0;
+}
+
+.multitask-popout .chat-3bRxxu .scrollerWrap-2su1QI .scroller-3sQKXg::-webkit-scrollbar{
+    width: 0;
+}
+
+.multitask-popout .container-1r6BKw{
+    overflow-x: auto;
+}
+
+.channelTextArea-rNsIhG{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.listeningActionsActivityFeed-3IMH0t .buttonSize-2Pmk-w:not(:first-child), .listeningActionsProfile-1fYwru .buttonSize-2Pmk-w:not(:first-child), .listeningActionsUserPopout-Ga2V_N .buttonSize-2Pmk-w:not(:first-child){
+    margin-left: 0;
+}
+
+.mask-1l8v16 foreignObject
+{
+    mask: none !important;
+    border-radius: var(--avatar-radius) !important;
+    -webkit-border-radius: var(--avatar-radius) !important;
+    -moz-border-radius: var(--avatar-radius) !important;
+    -ms-border-radius: var(--avatar-radius) !important;
+    -o-border-radius: var(--avatar-radius) !important;
+}
+
+.mask-1l8v16 img
+{
+    border-radius: 10px !important;
+    z-index: 1000 !important;
+}
+
+.pointerEvents-2zdfdO, rect[x="7.5"][y="5"][width="10"][height="10"][rx="5"][ry="5"][fill="white"]
+{
+    mask: none !important;
+    rx: 50%;
+}
+
+[class*="topSection"] .pointerEvents-2zdfdO{
+    width: 16px !important;
+    height: 16px !important;
+    x:60 !important;
+    y:60 !important;
+}
+
+.cursorDefault-dsQJ1n mask rect:not([fill="white"]){
+    display: none;
+}
+
+.avatarHint-1qgaV3 foreignObject
+{
+    mask: none !important;
+    border-radius: var(--avatar-radius) !important;
+    -webkit-border-radius: var(--avatar-radius) !important;
+    -moz-border-radius: var(--avatar-radius) !important;
+    -ms-border-radius: var(--avatar-radius) !important;
+    -o-border-radius: var(--avatar-radius) !important;
+}
+
+.avatar-1BDn8e{
+    border-radius: var(--avatar-radius);
+    -webkit-border-radius: var(--avatar-radius);
+    -moz-border-radius: var(--avatar-radius);
+    -ms-border-radius: var(--avatar-radius);
+    -o-border-radius: var(--avatar-radius);
+}
+
+.wrapper-25eVIn .svg-1X37T1 foreignObject{
+    mask: none !important;
+    border-radius: var(--server-radius);
+    -webkit-border-radius: var(--server-radius);
+    -moz-border-radius: var(--server-radius);
+    -ms-border-radius: var(--server-radius);
+    -o-border-radius: var(--server-radius);
+}
+
+.lowerBadge-29hYVK, .upperBadge-2XnnGB{
+    box-shadow: 0 0 10px 1px #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.base-PmTxvP{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
 
 
 
