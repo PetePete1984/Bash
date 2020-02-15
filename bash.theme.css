@@ -10,7 +10,7 @@
     --background-radius: 10px; /*Set the radius Discord. Set to 0 if you don't use transparency feature. Disabled for linux because it's ugly this enabled in discord with frame*/
     
     /*Avatar/Server Settings*/
-    --server-radius: 20px; /*Change the server radius*/
+    --server-radius: 50%; /*Change the server radius*/
     --avatar-radius: 50%; /*Change the avatar radius*/
 
     /*Color Settings*/
