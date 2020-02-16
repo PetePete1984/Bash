@@ -43,7 +43,7 @@
 
 /*Version*/
 :root{
-    --bash-version: "20.2.15";
+    --bash-version: "20.2.16";
 }
 
 /*Start of the REAL code*/
@@ -2005,7 +2005,7 @@ html[lang]::before{
 
 .role-2irmRk{
     border: none !important;
-    background: #21222688;
+    backdrop-filter: blur(10px);
     padding: 16px 10px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -2044,6 +2044,7 @@ html[lang]::before{
     -o-transform: translateY(-10px);
     display: block;
     align-items: unset;
+    z-index: 3;
 }
 
 .userPopout-3XzG_A .actionButton-VzECiy .addButtonIcon-1NMJ8u{
@@ -2793,34 +2794,8 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
     background: #000a !important;
 }
 
-.headerXbox-3G-4PF .headerText-2sdzFM .nameTag-m8r81H .username-2b1r56{
-    color: #107c10
-}
-
-.headerXbox-3G-4PF .activityName-1IaRLn, .headerXbox-3G-4PF .textRow-19NEd_{
-    color: #107c10
-}
-
-.headerXbox-3G-4PF .lookOutlined-3sRXeN.colorWhite-rEQuAQ{
-    color: #107c10;
-    border-color: #107c1060;
-}
-
 .headerXbox-3G-4PF .xboxButtonLogo-1udUda{
     margin-right: 8px;
-}
-
-.headerSpotify-zpWxgT .headerText-2sdzFM .nameTag-m8r81H .username-2b1r56{
-    color: #1db954
-}
-
-.headerSpotify-zpWxgT .activityName-1IaRLn, .headerSpotify-zpWxgT .textRow-19NEd_{
-    color: #1db954;
-}
-
-.headerSpotify-zpWxgT .lookOutlined-3sRXeN.colorWhite-rEQuAQ, .headerSpotify-zpWxgT .listenAlongIcon-2vb1HG{
-    color: #1db954;
-    border-color: #1db95460;
 }
 
 /*[aria-label="USER_SETTINGS"]{
@@ -3027,6 +3002,10 @@ a[href*='https://canary.discordapp.com/channels/']:hover::after{
     color: #fff;
 }
 
+.note-3HfJZ5 textarea::placeholder{
+    color: #ddd;
+}
+
 .customStatusText-39gdCI{
     word-break: break-word;
     overflow: auto;
@@ -3134,7 +3113,7 @@ html:not(.platform-win) [class*="topSection"] .headerInfo-30uryT + div.horizonta
 .backdrop-1wrmKB{
     background: transparent !important;
     pointer-events: none;
-    z-index: 1001 !important;
+    z-index: 1002 !important;
 }
 
 .uploadModal-2ifh8j .inner-3nWsbo .file-34mY5K .icon-kyxXVr.unknown-3TPTMr{
@@ -3590,19 +3569,69 @@ html:not(.platform-win) [class*="topSection"] .headerInfo-30uryT + div.horizonta
 
 .lowerBadge-29hYVK, .upperBadge-2XnnGB{
     box-shadow: 0 0 10px 1px #000;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .base-PmTxvP{
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.roleCircle-3xAZ1j::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: inherit;
+    opacity: 0.53;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: 5px;
+}
+
+.roleCircle-3xAZ1j[style="background-color: rgb(185, 187, 190);"]::before{
+    background-color: #000a;
+}
+
+.role-2irmRk{position: relative;}
+.role-2irmRk *{
+    z-index: 2;
+}
+
+div[data-no-focus-lock="true"] .popouts-2bnG9Z+div .modal-3c3bKg{
+    z-index: 1001;
+}
+
+.emojiPicker-3m1S-j{
+    background: #0008;
+    backdrop-filter: blur(20px);
+}
+
+@supports not (backdrop-filter: blur(20px)){
+    .emojiPicker-3m1S-j{
+        background: #000a;
+    }
+}
+
+.emojiPicker-3m1S-j .header-1nkwgG{
+    box-shadow: none;
+}
+
+.icon-27yU2q{
+    border-radius: var(--server-radius);
+    -webkit-border-radius: var(--server-radius);
+    -moz-border-radius: var(--server-radius);
+    -ms-border-radius: var(--server-radius);
+    -o-border-radius: var(--server-radius);
 }
 
 
