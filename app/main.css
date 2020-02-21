@@ -4,6 +4,7 @@
 @import url('https://a-user-s-discord-themes.github.io/OnlyIconsOnMenus/app.css'); /*Only Icons On Menus*/
 @import url("https://custom-avatar-hints.github.io/hints/app/language-hell.css"); /*Custom Avatars Hint side effect fixer*/
 @import url('https://custom-avatar-hints.github.io/hints/app/database.css'); /*Custom Avatar Hints*/
+@import url("https://a-user-s-discord-themes.github.io/translations/bash/importing.css"); /*Translations*/
 
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -24,7 +25,7 @@
     --background-radius: 10px; /*Set the radius Discord. Set to 0 if you don't use transparency feature. Disabled for linux because it's ugly this enabled in discord with frame*/
     
     /*Avatar/Server Settings*/
-    --server-radius: 50%; /*Change the server radius*/
+    --server-radius: 20px; /*Change the server radius*/
     --avatar-radius: 50%; /*Change the avatar radius*/
 
     /*Color Settings*/
@@ -41,9 +42,12 @@
     --font: "Product Sans"; /*Font of Discord. Original is: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif*/
 }
 
+/*PLEASE DONT TOUCH UNDER HERE*/
+:root{--metadata-3: none;}
+
 /*Version*/
 :root{
-    --bash-version: "20.2.16";
+    --bash-version: "20.2.20";
 }
 
 /*Start of the REAL code*/
@@ -2048,11 +2052,14 @@ html[lang]::before{
 }
 
 .userPopout-3XzG_A .actionButton-VzECiy .addButtonIcon-1NMJ8u{
-    transform: translateY(-5px) translateX(-55px);
-    -webkit-transform: translateY(-5px) translateX(-55px);
-    -moz-transform: translateY(-5px) translateX(-55px);
-    -ms-transform: translateY(-5px) translateX(-55px);
-    -o-transform: translateY(-5px) translateX(-55px);
+    position: absolute;
+    top:50%;
+    left: 10px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .userPopout-3XzG_A .actionButton-VzECiy::after{
@@ -2060,17 +2067,16 @@ html[lang]::before{
     font-weight: bold;
     opacity: 1;
     color: #fff;
-    margin-left: 10px;
-    margin-top: -5px;
-    position: relative;
     bottom: 5px;
-    left: -55px;
-    transform: translateX(-100px);
     font-size: 12px;
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
+    position: absolute;
+    top:calc(50% + 1.5px);
+    left: 25px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .root-SR8cQa [mask="url(#svg-mask-status-online)"]{
@@ -2087,30 +2093,8 @@ html[lang]::before{
     color: #fff;
 }
 
-[data-name="Bash"] .bda-controls::before{
-    content: "Are you sure?";
-    margin: auto;
-    margin-right: -60px;
-    opacity: 0;
-    transition: all 200ms;
-    -webkit-transition: all 200ms;
-    -moz-transition: all 200ms;
-    -ms-transition: all 200ms;
-    -o-transition: all 200ms;
-}
-
-[data-name="Bash"] .bda-controls:hover::before{
-    opacity: 1;
-    margin-right: 10px;
-}
-
 .container-16j22k{
     z-index: -1;
-}
-
-.filename-3eBB_v::before{
-    opacity: .6;
-    content: "File name: ";
 }
 
 .problems-3mgf6w{
@@ -2866,39 +2850,6 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
     z-index: 100;
 }
 
-/* Better Jump Links */
-a[href*='https://canary.discordapp.com/channels/']{
-    text-decoration: none !important;
-    cursor: default;
-}
-
-a[href*='https://canary.discordapp.com/channels/']::after{
-    content: 'Jump';
-    visibility: visible!important;
-    text-decoration: none !important;
-    position: absolute;
-    pointer-events: visible;
-    cursor: pointer;
-    font-size: 0.8rem;
-    border-radius: 4px;
-    height: 15px;
-    padding: 2px 8px;
-    opacity: 0;
-    margin: 3px;
-    display: inline-block;
-    transition: opacity 200ms;
-    background-color: #535559;
-    color: hsla(0,0%,100%,.6);
-    -webkit-transition: opacity 200ms;
-    -moz-transition: opacity 200ms;
-    -ms-transition: opacity 200ms;
-    -o-transition: opacity 200ms;
-}
-
-a[href*='https://canary.discordapp.com/channels/']:hover::after{
-  opacity: 1;
-}
-
 .toast{
     border: none;
     border-radius: 0 !important;
@@ -3015,6 +2966,7 @@ a[href*='https://canary.discordapp.com/channels/']:hover::after{
 
 .rolesList-22qj2L{
     overflow-y: auto;
+    overflow-x: hidden;
     max-height: 240px;
 }
 
@@ -3517,16 +3469,21 @@ html:not(.platform-win) [class*="topSection"] .headerInfo-30uryT + div.horizonta
     -o-border-radius: var(--avatar-radius) !important;
 }
 
-.mask-1l8v16 img
+.userPopout-3XzG_A .mask-1l8v16 img, .header-QKLPzZ .mask-1l8v16 img, .membersWrap-2h-GB4 .wrapper-3t9DeA img,.container-3baos1 .avatar-SmRMf2.wrapper-3t9DeA img
 {
-    border-radius: 10px !important;
+    border-radius: var(--avatar-radius) !important;
     z-index: 1000 !important;
+    -webkit-border-radius: var(--avatar-radius) !important;
+    -moz-border-radius: var(--avatar-radius) !important;
+    -ms-border-radius: var(--avatar-radius) !important;
+    -o-border-radius: var(--avatar-radius) !important;
 }
 
 .pointerEvents-2zdfdO, rect[x="7.5"][y="5"][width="10"][height="10"][rx="5"][ry="5"][fill="white"]
 {
     mask: none !important;
-    rx: 50%;
+    rx: 4px;
+    z-index: 20;
 }
 
 [class*="topSection"] .pointerEvents-2zdfdO{
@@ -3536,7 +3493,7 @@ html:not(.platform-win) [class*="topSection"] .headerInfo-30uryT + div.horizonta
     y:60 !important;
 }
 
-.cursorDefault-dsQJ1n mask rect:not([fill="white"]){
+.cursorDefault-dsQJ1n mask rect:not([fill="white"]), .cursorDefault-dsQJ1n circle{
     display: none;
 }
 
@@ -3556,6 +3513,14 @@ html:not(.platform-win) [class*="topSection"] .headerInfo-30uryT + div.horizonta
     -moz-border-radius: var(--avatar-radius);
     -ms-border-radius: var(--avatar-radius);
     -o-border-radius: var(--avatar-radius);
+}
+
+.userInfoViewing-16kqK3 .wrapper-3t9DeA img{
+    border-radius: calc(var(--avatar-radius) + 20px) !important;
+    -webkit-border-radius: calc(var(--avatar-radius) + 20px) !important;
+    -moz-border-radius: calc(var(--avatar-radius) + 20px) !important;
+    -ms-border-radius: calc(var(--avatar-radius) + 20px) !important;
+    -o-border-radius: calc(var(--avatar-radius) + 20px) !important;
 }
 
 .wrapper-25eVIn .svg-1X37T1 foreignObject{
@@ -3586,6 +3551,7 @@ html:not(.platform-win) [class*="topSection"] .headerInfo-30uryT + div.horizonta
 
 .roleCircle-3xAZ1j::before{
     content: "";
+    transform: scale(1) !important;
     position: absolute;
     width:100%;
     height: 100%;
@@ -3596,10 +3562,14 @@ html:not(.platform-win) [class*="topSection"] .headerInfo-30uryT + div.horizonta
     z-index: 0;
     pointer-events: none;
     border-radius: 5px;
+    -webkit-transform: scale(1) !important;
+    -moz-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
 }
 
 .roleCircle-3xAZ1j[style="background-color: rgb(185, 187, 190);"]::before{
-    background-color: #000a;
+    background-color: transparent;
 }
 
 .role-2irmRk{position: relative;}
@@ -3617,6 +3587,10 @@ div[data-no-focus-lock="true"] .popouts-2bnG9Z+div .modal-3c3bKg{
 }
 
 @supports not (backdrop-filter: blur(20px)){
+    .roleCircle-3xAZ1j[style="background-color: rgb(185, 187, 190);"]::before{
+        background-color: #000a;
+    }
+
     .emojiPicker-3m1S-j{
         background: #000a;
     }
@@ -3634,7 +3608,10 @@ div[data-no-focus-lock="true"] .popouts-2bnG9Z+div .modal-3c3bKg{
     -o-border-radius: var(--server-radius);
 }
 
-
+.botTagRegular-2HEhHi{
+    background: #6668;
+    border-radius: 10px;
+}
 
 
 
