@@ -47,28 +47,9 @@ root{
 
 /*Start of the REAL code*/
 
-.membersWrap-2h-GB4{
-    margin-right: -185px;
-}
-
-.membersWrap-2h-GB4:hover{
-    margin-right: 0;
-}
-
-.searchResultsWrap-3-pOjs:hover{
-    margin-right: 0;
-}
-
-.searchResultsWrap-3-pOjs{
-    margin-right: -264px;
-}
 
 .contentColumnDefault-1VQkGM{
     margin: auto;
-}
-
-.sidebar-2K8pFh{
-    margin-left: -11.6em;
 }
 
 .wrapper-1Rf91z:hover + .base-3dtUhz .sidebar-2K8pFh, .sidebar-2K8pFh:hover{
