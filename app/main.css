@@ -46,7 +46,7 @@
 
 /*Version*/
 :root{
-    --bash-version: "20.3.7";
+    --bash-version: "20.3.11";
 }
 
 /*Start of the REAL code*/
@@ -2558,7 +2558,6 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
     background: #0004;
     cursor: default;
     border-bottom-color: transparent !important;
-    -webkit-filter:;
 }
 
 .itemActive-2V2HNc svg{
@@ -3586,8 +3585,14 @@ div[data-no-focus-lock="true"] .popouts-2bnG9Z+div .modal-3c3bKg{
     height: 100%;
 }
 
-.backdrop-1wrmKB, .backdropWithLayer-3_uhz4{
+.backdrop-1wrmKB{
     background: #0000 !important;
+}
+
+.backdropWithLayer-3_uhz4{
+    opacity: 1 !important;
+    background-color: unset !important;
+    backdrop-filter: blur(10px);
 }
 
 .modal-3c3bKg{
@@ -3626,10 +3631,14 @@ div[data-no-focus-lock="true"] .popouts-2bnG9Z+div .modal-3c3bKg{
     padding-bottom: 0px;
 }
 
-.modal-1sor29 .video-36_NdB{
+.modal-1sor29 .video-36_NdB, .content-8biNdB img{
     float: left;
     overflow: auto;
     margin-right: 2rem;
+}
+
+.content-8biNdB img {
+    width: unset;
 }
 
 .cardPrimary-1Hv-to{
