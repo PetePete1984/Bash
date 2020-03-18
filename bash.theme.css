@@ -11,9 +11,9 @@
 
 :root{
     /* BG Settings */
-    --background: url("https://cdn.discordapp.com/attachments/498857281522237440/667441302513647616/orin.jpg"); /*Your BG*/
-    --background-black-opacity: .5; /*Here you can set how dark you want for your background. No image editing*/
-    --background-opacity: .7; /*Opacity of your background. Set to 1 if you don't use transparency feature*/
+    --background: url("https://cdn.discordapp.com/attachments/638798841696616449/689859164453077097/Maple_Leaf.jpg"); /*Your BG*/
+    --background-black-opacity: .2; /*Here you can set how dark you want for your background. No image editing*/
+    --background-opacity: .7; /*Opacity of your background. Set to 1 if you don't use transparency . EXPERIMENTAL FEATURE DUE TO ELECTRON RENDERING ISSUES WITH backdrop-filter*/
     --background-radius: 10px; /*Set the radius Discord. Set to 0 if you don't use transparency feature. Disabled for linux because it's ugly this enabled in discord with frame*/
     
     /*Avatar/Server Settings*/
@@ -21,7 +21,7 @@
     --avatar-radius: 50%; /*Change the avatar radius*/
 
     /*Color Settings*/
-    --main-color: rgb(15, 124, 82); /*Replace some colors*/
+    --main-color: rgb(110, 163, 39); /*Replace some colors*/
     --ping-color: var(--main-color); /*Pings Color. Original value is #f04747*/
     --text-normal: #dcddde; /*Text Color. You can change it to black if you use a white background. Original is #dcddde*/
     --text-link: var(--main-color); /*Links Color. Original value is #00b0f4*/
