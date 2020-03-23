@@ -8,14 +8,7 @@
 
 <p align=center>Settings (like changing bg, color, transparency, etc...) are inside the theme file</p>
 
-#### Previews:
-
-![](https://cdn.discordapp.com/attachments/539180316447997974/669002327474044928/unknown.png)
-
-![](https://cdn.discordapp.com/attachments/539180316447997974/669000794439286823/unknown.png)
-
-![](https://cdn.discordapp.com/attachments/539180316447997974/669001854201364494/unknown.png)
-
+![](https://cdn.discordapp.com/attachments/539180316447997974/691679834316996628/unknown.png)
 
 #### Links:
 
