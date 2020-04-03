@@ -2385,7 +2385,7 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
   contain: none;
 }
 
-.wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN > .listItem-2P_4kh:first-child {
+.wrapper-1Rf91z .scrollerWrap-1IAIlv .scroller-2TZvBN > .tutorialContainer-1v44GL:first-child {
     top: 0;
     position: sticky !important;
     z-index: 2;
