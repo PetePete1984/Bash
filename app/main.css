@@ -46,7 +46,7 @@
 
 /*Version*/
 :root{
-    --bash-version: "20.4.1";
+    --bash-version: "20.4.26";
 }
 
 /*Start of the REAL code*/
@@ -4751,6 +4751,14 @@ body{
 }
 
 .customStatus-3tC2ig span{
+    display: none;
+}
+
+.powercord-entities-manage-tabs{
+    background: transparent;
+}
+
+.powercord-entities-manage-header span{
     display: none;
 }
 
