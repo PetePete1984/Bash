@@ -4762,6 +4762,32 @@ body{
     display: none;
 }
 
+.contentWrapper-2txmjs, .emojiPicker-3PwZFl{
+    backdrop-filter: blur(20px);
+    background: transparent;
+    box-shadow: 0 0 30px 0 #0005;
+}
+
+.inspector-sdLnLS, .categoryWrapper-UZ5YNj{
+    background: transparent;
+}
+
+.categorylabel-1v_czy{
+    text-transform: none;
+    text-shadow: 0 0 12px #000;
+}
+
+.emojiItem-14v6tW.emojiItemSelected-1aLkfV, .navButtonActive-3RPAJy{
+    background: #fff2;
+}
+
+.header-8ilj5e{
+    --elevation-low: none;
+}
+
+.wrapper-1rqM3x .scrollerWrap-2lJEkd{
+    height: calc(100% - 48px);
+}
 
 
 
