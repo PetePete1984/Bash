@@ -46,7 +46,7 @@
 
 /*Version*/
 :root{
-    --bash-version: "20.4.26";
+    --bash-version: "20.4.27";
 }
 
 /*Start of the REAL code*/
@@ -4787,6 +4787,10 @@ body{
 
 .wrapper-1rqM3x .scrollerWrap-2lJEkd{
     height: calc(100% - 48px);
+}
+
+.userPopout-3XzG_A > div[data-focus-lock-disabled]{
+    display: flex;
 }
 
 
