@@ -64,18 +64,18 @@
     margin-right: 0;
 }
 
-.searchResultsWrap-2DKFzt:hover{
-    margin-right: 0;
-}
+// .searchResultsWrap-3-pOjs:hover{
+//     margin-right: 0;
+// }
 
-.searchResultsWrap-2DKFzt{
-    transition: all 500ms;
-    margin-right: -264px;
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -ms-transition: all 500ms;
-    -o-transition: all 500ms;
-}
+// .searchResultsWrap-3-pOjs{
+//     transition: all 500ms;
+//     margin-right: -264px;
+//     -webkit-transition: all 500ms;
+//     -moz-transition: all 500ms;
+//     -ms-transition: all 500ms;
+//     -o-transition: all 500ms;
+// }
 
 .contentColumnDefault-1VQkGM{
     margin: auto;
@@ -469,7 +469,7 @@
     content: "+";
 }
 
-.theme-dark .searchResultsWrap-2DKFzt {
+.theme-dark .searchResultsWrap-3-pOjs {
     background-color: transparent;
 }
 
@@ -485,7 +485,7 @@
     background: transparent;
 }
 
-.theme-dark .searchResult-3pzFAB:before, .theme-dark .searchResult-3pzFAB:after{
+.theme-dark .searchResult-2N9RV4:before, .theme-dark .searchResult-2N9RV4:after, .channelName-wvgELL{
     background: transparent;
 }
 
@@ -955,18 +955,14 @@ body::after {
     -o-border-radius: var(--main-border-radius);
 }
 
-.theme-dark .searchResult-3pzFAB .hit-NLlWXA, .theme-dark .searchResult-3pzFAB.expanded-v2Szsz .searchResultMessage-2VxO12.hit-NLlWXA{
+.theme-dark .searchResult-2N9RV4 .hit-NLlWXA, .theme-dark .searchResult-2N9RV4.expanded-ovgtuV, .searchResultMessage-30QnSN.hit-1CXhXT{
     background-color: transparent;
     box-shadow: none;
     border: none !important;
 }
 
-.theme-dark .searchResult-3pzFAB .searchResultMessage-2VxO12.hit-NLlWXA, .theme-dark .searchResult-3pzFAB.expanded-v2Szsz{
+.theme-dark .searchResult-2N9RV4 .searchResultMessage-30QnSN.hit-1CXhXT, .theme-dark .searchResult-2N9RV4.expanded-v2Szsz{
     border: none;
-}
-
-.theme-dark .searchResult-3pzFAB .searchResultMessage-2VxO12.after-2g0jjc, .theme-dark .searchResult-3pzFAB .searchResultMessage-2VxO12.before-1x1q5S {
-    display: none;
 }
 
 .wrapper-3WhCwL{
