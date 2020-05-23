@@ -1479,7 +1479,7 @@ html[lang]::before{
     display: none;
 }
 
-.theme-dark .attachment-33OFj0{
+.theme-dark .attachment-33OFj0, .theme-dark .wrapperAudio-1jDe0Q{
     border: none;
 }
 
@@ -4396,7 +4396,7 @@ div[data-no-focus-lock="true"] .popouts-2bnG9Z+div .modal-3c3bKg{
     margin-right: 8px;
 }
 
-.theme-dark .attachment-33OFj0{
+.theme-dark .attachment-33OFj0, .theme-dark .wrapperAudio-1jDe0Q {
     background: #0006;
     backdrop-filter: blur(5px);
 }
