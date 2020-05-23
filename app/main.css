@@ -64,18 +64,18 @@
     margin-right: 0;
 }
 
-// .searchResultsWrap-3-pOjs:hover{
-//     margin-right: 0;
-// }
+.searchResultsWrap-3-pOjs:hover{
+    margin-right: 0;
+}
 
-// .searchResultsWrap-3-pOjs{
-//     transition: all 500ms;
-//     margin-right: -264px;
-//     -webkit-transition: all 500ms;
-//     -moz-transition: all 500ms;
-//     -ms-transition: all 500ms;
-//     -o-transition: all 500ms;
-// }
+.searchResultsWrap-3-pOjs{
+    transition: all 500ms;
+    margin-right: -264px;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+}
 
 .contentColumnDefault-1VQkGM{
     margin: auto;
