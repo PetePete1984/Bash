@@ -812,7 +812,7 @@
     -o-border-radius: 0;
 }
 
-.theme-dark .messagesPopoutWrap-1MQ1bW{
+.theme-dark .messagesPopoutWrap-1MQ1bW, .layer-v9HyYc .container-PbeQka{
     max-height: 100% !important;
 }
 
@@ -861,7 +861,7 @@
     -o-border-radius: 50%;
 }
 
-.theme-dark .messagesPopoutWrap-1MQ1bW{
+.theme-dark .messagesPopoutWrap-1MQ1bW, .layer-v9HyYc .container-PbeQka{
     height: -webkit-fill-available;
     position: fixed;
     right: 0;
