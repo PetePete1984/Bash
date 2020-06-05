@@ -4,20 +4,20 @@
 @import url("https://custom-avatar-hints.github.io/hints/app/language-hell.css"); /*Custom Avatars Hint side effect fixer*/
 @import url('https://custom-avatar-hints.github.io/hints/app/database.css'); /*Custom Avatar Hints*/
 @import url("https://a-user-s-discord-themes.github.io/translations/bash/importing.css"); /*Translations*/
-
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 @font-face {font-family: "Blox (BRK)"; src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot"); src: url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.woff") format("woff"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0eacdeed89800b40c5d73b6c00863f31.svg#Blox (BRK)") format("svg"); } /*Blox BRK*/
 
 @font-face {
   font-family: 'Product Sans';
   font-style: normal;
-  font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
+
 :root{
-    /* BG Settings */
+    /* BG Settings*/
     --background: url("https://cdn.discordapp.com/attachments/638798841696616449/689859164453077097/Maple_Leaf.jpg"); /*Your BG*/
     --background-black-opacity: .2; /*Here you can set how dark you want for your background. No image editing*/
     --background-opacity: .7; /*Opacity of your background. Set to 1 if you don't use transparency . EXPERIMENTAL FEATURE DUE TO ELECTRON RENDERING ISSUES WITH backdrop-filter*/
@@ -46,7 +46,7 @@
 
 /*Version*/
 :root{
-    --bash-version: "20.4.27";
+    --bash-version: "20.6.5";
 }
 
 /*Start of the REAL code*/
@@ -824,7 +824,7 @@
     -o-border-radius: 0;
 }
 
-.contextMenu-HLZMGh{
+.styleFlexible-wGDiIL{
     height: 100%;
     padding: 10px;
     border-radius: calc(var(--main-border-radius) / 2);
@@ -955,13 +955,13 @@ body::after {
     -o-border-radius: var(--main-border-radius);
 }
 
-.theme-dark .searchResult-2N9RV4 .hit-NLlWXA, .theme-dark .searchResult-2N9RV4.expanded-ovgtuV, .searchResultMessage-30QnSN.hit-1CXhXT{
+.theme-dark .searchResult-2N9RV4 .hit-NLlWXA, .theme-dark .searchResult-2N9RV4.expanded-ovgtuV .searchResultMessage-2VxO12.hit-1CXhXT{
     background-color: transparent;
     box-shadow: none;
     border: none !important;
 }
 
-.theme-dark .searchResult-2N9RV4 .searchResultMessage-30QnSN.hit-1CXhXT, .theme-dark .searchResult-2N9RV4.expanded-v2Szsz{
+.theme-dark .searchResult-2N9RV4 .searchResultMessage-2VxO12.hit-NLlWXA, .theme-dark .searchResult-2N9RV4.expanded-ovgtuV{
     border: none;
 }
 
@@ -2127,11 +2127,15 @@ img[alt] + .title-jXR8lp + .subTitle-3TUjmF + .block-egJnc0{
     display: none;
 }
 
-.contextMenu-HLZMGh{
+.styleFlexible-wGDiIL{
     background: #0008;
     backdrop-filter: blur(10px);
     animation: fadeTop .25s ease-in-out;
     -webkit-animation: fadeTop .25s ease-in-out;
+}
+
+.item-1tOPte{
+    border-radius: var(--main-border-radius);
 }
 
 .theme-dark .quickMessage-1yeL4E{
@@ -2415,6 +2419,7 @@ html:not(.platform-win) .theme-light .footer-3rDWdC{
     background: #0004;
     cursor: default;
     border-bottom-color: transparent !important;
+    -webkit-filter:;
 }
 
 .itemActive-2V2HNc svg{
@@ -2796,7 +2801,7 @@ html:not(.platform-win) [class*="topSection"] .headerInfo-30uryT + div.horizonta
     -o-border-radius: var(--main-border-radius);
 }
 
-.popoutBottom-2GAFPg.noArrow-2foL9g, .popoutBottomLeft-1pG8B4.noArrow-2foL9g, .css-181m2lf-menu{
+.popoutBottom-2GAFPg.noArrow-2foL9g, .popoutBottomLeft-1pG8B4.noArrow-2foL9g, .popoutBottomRight-2Rno5S.noArrow-2foL9g, .css-181m2lf-menu{
     position: fixed;
     top: 50% !important;
     left: 50% !important;
@@ -4396,7 +4401,7 @@ div[data-no-focus-lock="true"] .popouts-2bnG9Z+div .modal-3c3bKg{
     margin-right: 8px;
 }
 
-.theme-dark .attachment-33OFj0, .theme-dark .wrapperAudio-1jDe0Q {
+.theme-dark .attachment-33OFj0, .theme-dark .wrapperAudio-1jDe0Q{
     background: #0006;
     backdrop-filter: blur(5px);
 }
@@ -4638,50 +4643,6 @@ body{
     border-bottom: none;
 }
 
-.container-3baos1:nth-last-child(1){
-    flex-direction: column;
-    align-items: flex-start;
-    height: unset;
-    padding-bottom: 5px;
-    /*padding-left: 10px;
-    padding-right: 10px;*/
-}
-
-.container-3baos1:nth-last-child(1) .nameTag-3uD-yy{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.container-3baos1:nth-last-child(1) .default-3sgIpy, .container-3baos1:nth-last-child(1) .hovered-d5PMVU{
-    vertical-align: middle;
-    opacity: 1 !important;
-    transform: translateZ(0) !important;
-    -webkit-transform: translateZ(0) !important;
-    -moz-transform: translateZ(0) !important;
-    -ms-transform: translateZ(0) !important;
-    -o-transform: translateZ(0) !important;
-}
-
-.container-3baos1:nth-last-child(1) .hovered-d5PMVU{
-    top:2px;
-}
-
-.container-3baos1:nth-last-child(1) .subtext-3CDbHg{
-    display: inline-flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.container-3baos1:nth-last-child(1) .default-3sgIpy{
-    text-align: right;
-}
-
-.container-3baos1:nth-last-child(1) .horizontal-2EEEnY{
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
 .hljs .powercord-lines:after, .powercord-codeblock-lang{
     border: none;
 }
@@ -4701,7 +4662,7 @@ body{
 }
 
 .reduce-motion .listRow-hutiT_ , .reduce-motion .connectedAccount-36nQx7,
-.reduce-motion .contextMenu-HLZMGh
+.reduce-motion .styleFlexible-wGDiIL
 {
     animation: none;
     -webkit-animation: none;
@@ -4712,7 +4673,7 @@ body{
     background: #000a !important;
 }
 
-.reduce-motion .contextMenu-HLZMGh, .reduce-motion.theme-dark .container-3ayLPN{
+.reduce-motion .styleFlexible-wGDiIL, .reduce-motion.theme-dark .container-3ayLPN{
     background: #000c !important;
     backdrop-filter: blur(0) !important;
 }
@@ -4796,9 +4757,14 @@ body{
     display: flex;
 }
 
+.styleFixed-sX-yHV{
+    background: #0008;
+    backdrop-filter: blur(10px);
+}
 
-
-
+.colorDefault-2K3EoJ:hover{
+    background: var(--main-color);
+}
 
 
 
