@@ -1,3 +1,4 @@
+(note: the theme is temporary unmaintent)
 <h1 align=center>Bash</h1>
 
 <p align=center>A minimalist, fully-animated, clean and sexy theme. The best theme for square monitors!</p>
