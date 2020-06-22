@@ -7,7 +7,7 @@
 
 <p align=center>To install on powercord use <code>git clone https://github.com/A-User-s-Discord-Themes/Bash</code></p>
 
-<p align=center>Settings (like changing bg, color, transparency, etc...) are inside the theme file (BD - bash.theme.css, Powercord - bash.css)</p>
+<p align=center>Settings (like changing bg, color, transparency, etc...) are inside the theme file (BD - bash.theme.css, Powercord - bash.scss)</p>
 
 ![](https://cdn.discordapp.com/attachments/539180316447997974/691679834316996628/unknown.png)
 
